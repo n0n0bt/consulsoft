@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
 const year = new Date().getFullYear()
 </script>
 
@@ -33,9 +34,9 @@ const year = new Date().getFullYear()
         <div>
           <h4 class="text-[13px] font-semibold text-white mb-5 tracking-wide">{{ t('footer.legal') }}</h4>
           <ul class="space-y-3 text-[14px]">
-            <li><a href="#" class="hover:text-gold-400 transition-colors font-light">{{ t('footer.privacy') }}</a></li>
-            <li><a href="#" class="hover:text-gold-400 transition-colors font-light">{{ t('footer.imprint') }}</a></li>
-            <li><a href="#" class="hover:text-gold-400 transition-colors font-light">{{ t('footer.terms') }}</a></li>
+            <li><NuxtLink :to="localePath('/datenschutz')" class="hover:text-gold-400 transition-colors font-light">{{ t('footer.privacy') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/impressum')" class="hover:text-gold-400 transition-colors font-light">{{ t('footer.imprint') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('/agb')" class="hover:text-gold-400 transition-colors font-light">{{ t('footer.terms') }}</NuxtLink></li>
           </ul>
         </div>
       </div>

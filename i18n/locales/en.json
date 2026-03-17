@@ -3,6 +3,7 @@
     "services": "Services",
     "about": "About",
     "process": "Process",
+    "projects": "Projects",
     "contact": "Contact",
     "team": "Team"
   },
@@ -179,6 +180,90 @@
         "title": "Growth",
         "description": "Technology never stands still – and neither do we. We constantly learn and share our knowledge."
       }
+    }
+  },
+  "projects": {
+    "tag": "OUR PROJECTS",
+    "title": "Selected work",
+    "subtitle": "A selection of projects we've delivered for our clients across different industries.",
+    "viewProject": "View project",
+    "backToHome": "Back to overview",
+    "screenshots": "Impressions",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "results": "Results",
+    "otherProjects": "More projects",
+    "items": {
+      "erp": {
+        "title": "Enterprise ERP Platform",
+        "short": "Complete ERP system for a mid-sized manufacturing company with real-time analytics and process automation.",
+        "overviewTitle": "Digitizing the entire value chain",
+        "description1": "Our client, a mid-sized manufacturing company with over 500 employees, needed a modern ERP system to replace their outdated legacy infrastructure. The goal was to digitize the entire value chain — from procurement and production planning to sales and financial reporting.",
+        "description2": "We developed a modular, cloud-native platform built on Angular and Spring Boot, deployed on Azure. The system features real-time dashboards, automated workflows, and seamless integration with existing third-party systems via REST APIs.",
+        "challenge": "Replace a 15-year-old legacy system without disrupting daily operations. Over 200 business processes needed to be mapped and modernized.",
+        "solution": "Phased migration with parallel operation. Modular architecture allowed us to replace components individually while maintaining full system availability.",
+        "results": "40% faster order processing | 60% reduction in manual data entry | 99.9% system uptime | ROI achieved within 14 months"
+      },
+      "logistics": {
+        "title": "Smart Logistics Platform",
+        "short": "Real-time tracking and route optimization for a fleet of 200+ vehicles across Europe.",
+        "overviewTitle": "Intelligent fleet management at scale",
+        "description1": "A European logistics provider needed a platform to optimize their fleet operations across 8 countries. The existing system couldn't handle the complexity of real-time tracking, dynamic route planning, and compliance requirements across multiple jurisdictions.",
+        "description2": "We built a high-performance platform using Vue.js and Kotlin, deployed on AWS with Kubernetes. The system processes thousands of GPS updates per second, calculates optimal routes using machine learning, and provides real-time visibility into the entire fleet.",
+        "challenge": "Process 10,000+ GPS events per second with sub-second latency while calculating optimal routes across 8 countries with different regulations.",
+        "solution": "Event-driven architecture with Redis Streams for real-time processing. ML-based route optimization that considers traffic, weather, regulations, and driver rest times.",
+        "results": "23% reduction in fuel costs | 18% more deliveries per day | Real-time tracking for 200+ vehicles | Compliance automation across 8 countries"
+      },
+      "healthportal": {
+        "title": "Digital Health Portal",
+        "short": "Patient-facing health platform with AI-powered symptom assessment and appointment booking.",
+        "overviewTitle": "Making healthcare accessible and digital",
+        "description1": "A healthcare network with 45 clinics needed a unified patient portal to streamline appointment booking, provide digital health records access, and reduce the burden on administrative staff. Patient satisfaction scores were declining due to long wait times and manual processes.",
+        "description2": "We developed a HIPAA/GDPR-compliant portal using React and Python, with Azure as the cloud backbone. The platform includes an AI-powered symptom checker, intelligent appointment scheduling, secure messaging with providers, and integration with existing hospital information systems via FHIR standards.",
+        "challenge": "Build a platform that meets strict healthcare compliance requirements (GDPR, medical device regulations) while providing an intuitive consumer-grade experience.",
+        "solution": "Compliance-first architecture with end-to-end encryption, audit logging, and role-based access. AI models trained on anonymized clinical data for symptom assessment.",
+        "results": "35% reduction in no-show appointments | 50% fewer administrative phone calls | Patient satisfaction up from 3.2 to 4.7/5 | Fully GDPR and medical device compliant"
+      }
+    }
+  },
+  "thankYouPage": {
+    "tag": "THANK YOU",
+    "title": "Your message has been sent!",
+    "message": "Thank you for reaching out. Our team will get back to you as soon as possible.",
+    "responseInfo": "You can expect a response from us within 24 hours.",
+    "backHome": "Back to homepage",
+    "sendAnother": "Send another message"
+  },
+  "contactPage": {
+    "tag": "CONTACT",
+    "title": "Get in touch",
+    "subtitle": "Tell us about your project. We'll get back to you within 24 hours.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you{'@'}company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "phone": "Phone",
+      "phonePlaceholder": "+49 ...",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or inquiry...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "error": "Something went wrong. Please try again or email us directly at info{'@'}consulsoft.de."
+    },
+    "success": {
+      "title": "Message sent!",
+      "message": "Thank you for reaching out. We'll get back to you as soon as possible.",
+      "another": "Send another message"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "address": "Germany",
+      "responseTitle": "Quick response",
+      "responseText": "We typically respond to inquiries within 24 hours."
     }
   },
   "footer": {

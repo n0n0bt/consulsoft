@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const ctaRef = ref<HTMLElement | null>(null)
 const markX = ref(0)
@@ -50,15 +51,15 @@ function onMouseLeave() {
             {{ t('cta.subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              :href="`mailto:${t('cta.email')}`"
+            <NuxtLink
+              :to="localePath('/kontakt')"
               class="group inline-flex items-center gap-2.5 bg-white text-dark-900 font-semibold text-[15px] px-8 py-4 rounded-full hover:bg-gold-50 transition-all hover:shadow-xl active:scale-[0.97]"
             >
               {{ t('cta.button') }}
               <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </NuxtLink>
             <span class="text-dark-400 text-[14px]">
               {{ t('cta.email') }}
             </span>

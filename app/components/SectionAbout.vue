@@ -65,7 +65,7 @@ const activeCircle = ref<string | null>(null)
         </div>
         <div class="aspect-[3/4] rounded-2xl overflow-hidden">
           <img
-            src="/team/dimitar.jpg"
+            src="/team/dimitar-manev.jpeg"
             alt="Dimitar Manev"
             class="w-full h-full object-cover object-top"
           />

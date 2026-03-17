@@ -22,7 +22,7 @@ const { t } = useI18n()
               class="w-11 h-11 rounded-full object-cover border-2 border-white"
             />
             <img
-              src="/team/dimitar.jpg"
+              src="/team/dimitar-manev.jpeg"
               alt="Dimitar Manev"
               class="w-11 h-11 rounded-full object-cover border-2 border-white"
             />

@@ -2,6 +2,13 @@
 const { t } = useI18n()
 useScrollReveal()
 
+useHead({ title: t('teamPage.title') })
+useSeoMeta({
+  description: t('teamPage.subtitle'),
+  ogTitle: t('teamPage.title'),
+  ogDescription: t('teamPage.subtitle'),
+})
+
 const team = [
   {
     key: 'naumche',
@@ -13,7 +20,7 @@ const team = [
   },
   {
     key: 'dimitar',
-    image: '/team/dimitar.jpg',
+    image: '/team/dimitar-manev.jpeg',
     links: {
       linkedin: '#',
       github: '#',

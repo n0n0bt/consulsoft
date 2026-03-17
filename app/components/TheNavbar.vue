@@ -22,9 +22,10 @@ const localePath = useLocalePath()
 const navLinks = computed(() => [
   { label: t('nav.services'), href: '#services' },
   { label: t('nav.about'), href: '#about' },
+  { label: t('nav.projects'), href: '#projects' },
   { label: t('nav.process'), href: '#process' },
   { label: t('nav.team'), to: localePath('/about') },
-  { label: t('nav.contact'), href: '#contact' },
+  { label: t('nav.contact'), to: localePath('/kontakt') },
 ])
 </script>
 
@@ -72,12 +73,12 @@ const navLinks = computed(() => [
         >
           {{ getCode(otherLocale).toUpperCase() }}
         </button>
-        <a
-          href="#contact"
+        <NuxtLink
+          :to="localePath('/kontakt')"
           class="bg-dark-900 text-white text-[13px] font-semibold px-5 py-2.5 rounded-full hover:bg-dark-800 transition-all hover:shadow-lg hover:shadow-dark-900/20 active:scale-[0.97]"
         >
           {{ t('hero.cta') }}
-        </a>
+        </NuxtLink>
       </div>
 
       <!-- Mobile toggle -->
@@ -141,13 +142,13 @@ const navLinks = computed(() => [
             >
               {{ getCode(otherLocale).toUpperCase() }}
             </button>
-            <a
-              href="#contact"
+            <NuxtLink
+              :to="localePath('/kontakt')"
               class="flex-1 bg-dark-900 text-white text-[13px] font-semibold py-3 rounded-full text-center"
               @click="mobileOpen = false"
             >
               {{ t('hero.cta') }}
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>

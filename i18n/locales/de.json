@@ -3,6 +3,7 @@
     "services": "Leistungen",
     "about": "Über uns",
     "process": "Prozess",
+    "projects": "Projekte",
     "contact": "Kontakt",
     "team": "Team"
   },
@@ -179,6 +180,90 @@
         "title": "Wachstum",
         "description": "Technologie steht nie still – und wir auch nicht. Wir lernen ständig dazu und teilen unser Wissen."
       }
+    }
+  },
+  "projects": {
+    "tag": "UNSERE PROJEKTE",
+    "title": "Ausgewählte Arbeiten",
+    "subtitle": "Eine Auswahl von Projekten, die wir für unsere Kunden in verschiedenen Branchen umgesetzt haben.",
+    "viewProject": "Projekt ansehen",
+    "backToHome": "Zurück zur Übersicht",
+    "screenshots": "Impressionen",
+    "challenge": "Herausforderung",
+    "solution": "Lösung",
+    "results": "Ergebnisse",
+    "otherProjects": "Weitere Projekte",
+    "items": {
+      "erp": {
+        "title": "Enterprise ERP-Plattform",
+        "short": "Komplettes ERP-System für ein mittelständisches Fertigungsunternehmen mit Echtzeit-Analysen und Prozessautomatisierung.",
+        "overviewTitle": "Digitalisierung der gesamten Wertschöpfungskette",
+        "description1": "Unser Kunde, ein mittelständisches Fertigungsunternehmen mit über 500 Mitarbeitern, benötigte ein modernes ERP-System als Ersatz für die veraltete Legacy-Infrastruktur. Ziel war die Digitalisierung der gesamten Wertschöpfungskette – von der Beschaffung über die Produktionsplanung bis hin zu Vertrieb und Finanzberichterstattung.",
+        "description2": "Wir entwickelten eine modulare, cloud-native Plattform auf Basis von Angular und Spring Boot, deployed auf Azure. Das System bietet Echtzeit-Dashboards, automatisierte Workflows und nahtlose Integration mit bestehenden Drittsystemen über REST APIs.",
+        "challenge": "Ablösung eines 15 Jahre alten Legacy-Systems ohne Unterbrechung des Tagesgeschäfts. Über 200 Geschäftsprozesse mussten erfasst und modernisiert werden.",
+        "solution": "Phasenweise Migration mit Parallelbetrieb. Die modulare Architektur ermöglichte den Austausch einzelner Komponenten bei voller Systemverfügbarkeit.",
+        "results": "40% schnellere Auftragsabwicklung | 60% weniger manuelle Dateneingaben | 99,9% Systemverfügbarkeit | ROI innerhalb von 14 Monaten erreicht"
+      },
+      "logistics": {
+        "title": "Smart Logistics Plattform",
+        "short": "Echtzeit-Tracking und Routenoptimierung für eine Flotte von 200+ Fahrzeugen in ganz Europa.",
+        "overviewTitle": "Intelligentes Flottenmanagement im großen Maßstab",
+        "description1": "Ein europäischer Logistikanbieter benötigte eine Plattform zur Optimierung seiner Flottenoperationen in 8 Ländern. Das bestehende System konnte die Komplexität von Echtzeit-Tracking, dynamischer Routenplanung und den Compliance-Anforderungen verschiedener Jurisdiktionen nicht bewältigen.",
+        "description2": "Wir haben eine hochperformante Plattform mit Vue.js und Kotlin entwickelt, deployed auf AWS mit Kubernetes. Das System verarbeitet tausende GPS-Updates pro Sekunde, berechnet optimale Routen mittels Machine Learning und bietet Echtzeit-Einblick in die gesamte Flotte.",
+        "challenge": "Verarbeitung von 10.000+ GPS-Events pro Sekunde mit Sub-Sekunden-Latenz bei gleichzeitiger Berechnung optimaler Routen über 8 Länder mit unterschiedlichen Vorschriften.",
+        "solution": "Event-Driven-Architektur mit Redis Streams für Echtzeit-Verarbeitung. ML-basierte Routenoptimierung unter Berücksichtigung von Verkehr, Wetter, Vorschriften und Fahrerruhezeiten.",
+        "results": "23% Reduktion der Kraftstoffkosten | 18% mehr Lieferungen pro Tag | Echtzeit-Tracking für 200+ Fahrzeuge | Compliance-Automatisierung in 8 Ländern"
+      },
+      "healthportal": {
+        "title": "Digitales Gesundheitsportal",
+        "short": "Patientenportal mit KI-gestützter Symptomerfassung und Terminbuchung.",
+        "overviewTitle": "Gesundheitsversorgung digital und zugänglich machen",
+        "description1": "Ein Gesundheitsnetzwerk mit 45 Kliniken benötigte ein einheitliches Patientenportal zur Vereinfachung der Terminbuchung, digitalen Zugang zu Gesundheitsakten und Entlastung des Verwaltungspersonals. Die Patientenzufriedenheit sank aufgrund langer Wartezeiten und manueller Prozesse.",
+        "description2": "Wir entwickelten ein DSGVO-konformes Portal mit React und Python, mit Azure als Cloud-Backbone. Die Plattform umfasst einen KI-gestützten Symptom-Checker, intelligente Terminplanung, sicheres Messaging mit Ärzten und Integration mit bestehenden Krankenhausinformationssystemen via FHIR-Standards.",
+        "challenge": "Aufbau einer Plattform, die strenge Compliance-Anforderungen im Gesundheitswesen (DSGVO, Medizinprodukteverordnung) erfüllt und gleichzeitig eine intuitive Consumer-Erfahrung bietet.",
+        "solution": "Compliance-First-Architektur mit Ende-zu-Ende-Verschlüsselung, Audit-Logging und rollenbasierter Zugriffskontrolle. KI-Modelle trainiert auf anonymisierten klinischen Daten.",
+        "results": "35% weniger Terminausfälle | 50% weniger administrative Anrufe | Patientenzufriedenheit von 3,2 auf 4,7/5 gestiegen | Voll DSGVO- und medizinproduktkonform"
+      }
+    }
+  },
+  "thankYouPage": {
+    "tag": "VIELEN DANK",
+    "title": "Ihre Nachricht ist angekommen!",
+    "message": "Vielen Dank für Ihre Anfrage. Unser Team wird sich so schnell wie möglich bei Ihnen melden.",
+    "responseInfo": "Sie erhalten in der Regel innerhalb von 24 Stunden eine Antwort von uns.",
+    "backHome": "Zurück zur Startseite",
+    "sendAnother": "Weitere Nachricht senden"
+  },
+  "contactPage": {
+    "tag": "KONTAKT",
+    "title": "Sprechen Sie mit uns",
+    "subtitle": "Erzählen Sie uns von Ihrem Projekt. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre{'@'}email.de",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmen",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 ...",
+      "message": "Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info{'@'}consulsoft.de."
+    },
+    "success": {
+      "title": "Nachricht gesendet!",
+      "message": "Vielen Dank für Ihre Anfrage. Wir melden uns schnellstmöglich bei Ihnen.",
+      "another": "Weitere Nachricht senden"
+    },
+    "info": {
+      "email": "E-Mail",
+      "location": "Standort",
+      "address": "Deutschland",
+      "responseTitle": "Schnelle Antwort",
+      "responseText": "Wir antworten in der Regel innerhalb von 24 Stunden auf Ihre Anfrage."
     }
   },
   "footer": {
