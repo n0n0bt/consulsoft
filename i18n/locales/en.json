@@ -1,0 +1,193 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "process": "Process",
+    "contact": "Contact",
+    "team": "Team"
+  },
+  "hero": {
+    "tag": "SOFTWARE FOR ENTERPRISES",
+    "title": "Modern Software Development",
+    "subtitle": "We build tailored software solutions that drive your business forward.",
+    "cta": "Start a project",
+    "secondary": "Learn more"
+  },
+  "partners": {
+    "title": "Trusted by leading companies"
+  },
+  "services": {
+    "tag": "OUR SERVICES",
+    "title": "Solutions for your success",
+    "subtitle": "We provide end-to-end software development – from consulting to delivery.",
+    "items": {
+      "web": {
+        "title": "Web Applications",
+        "description": "Modern, scalable web applications built with cutting-edge technologies and frameworks."
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "description": "Native and cross-platform apps for iOS and Android with outstanding user experience."
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "description": "Cloud-native architectures, CI/CD pipelines, and infrastructure automation."
+      },
+      "consulting": {
+        "title": "IT Consulting",
+        "description": "Strategic consulting for digital transformation and technology decisions."
+      },
+      "api": {
+        "title": "API & Integration",
+        "description": "Seamless system integration and API development for connected business processes."
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "description": "Intelligent automation solutions and AI integration for more efficient operations."
+      }
+    }
+  },
+  "about": {
+    "tag": "WHY CONSULSOFT",
+    "title": "Your partner for digital innovation",
+    "description": "When it comes to modern software development, we are the right partner. We build solutions based on the latest technologies and methods.",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Successful projects",
+      "experts": "Expert developers",
+      "satisfaction": "Client satisfaction"
+    },
+    "points": {
+      "quality": "Highest quality standards with agile methods",
+      "transparency": "Full transparency in every project step",
+      "partner": "Certified Microsoft & AWS Partner",
+      "iso": "ISO 9001 certified"
+    },
+    "circles": {
+      "agile": {
+        "label": "Agile\nMethods",
+        "description": "We work in short sprints with regular feedback. You can track progress at any time and adjust priorities as needed."
+      },
+      "cloud": {
+        "label": "Cloud\nNative",
+        "description": "Our solutions are designed cloud-first – scalable, resilient, and optimized for your infrastructure."
+      },
+      "ai": {
+        "label": "AI &\nAutomation",
+        "description": "We integrate modern AI models and automation into your business processes for maximum efficiency."
+      },
+      "security": {
+        "label": "Enterprise\nSecurity",
+        "description": "Security comes first. GDPR-compliant, ISO-certified, and developed to the highest standards."
+      }
+    }
+  },
+  "tech": {
+    "title": "Technologies we use for you",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ai": "AI",
+    "cloud": "Cloud",
+    "items": {
+      "angular": "Angular is a powerful framework for complex enterprise web applications with TypeScript, modular architecture, and a rich ecosystem.",
+      "vue": "Vue.js combines simplicity with flexibility – ideal for performant, reactive user interfaces and single-page applications.",
+      "react": "React enables component-based UIs with high reusability. Perfect for dynamic, data-driven web applications.",
+      "java": "Java is a robust, platform-independent language for stable and scalable enterprise applications with high security requirements.",
+      "csharp": "C# combined with .NET provides a powerful platform for enterprise software, APIs, and cloud applications.",
+      "kotlin": "Kotlin is modern, concise, and fully interoperable with Java – ideal for Android development and backend services.",
+      "python": "Python excels in versatility: from data science to automation, web backends, and AI applications.",
+      "node": "Node.js enables server-side JavaScript with high performance – perfect for real-time applications and microservices.",
+      "dotnet": ".NET Core is a cross-platform framework for high-performance APIs, cloud services, and enterprise applications.",
+      "php": "PHP is a widely-used scripting language for server-side web development – ideal for portals, CMS, and business websites.",
+      "spring": "Spring provides a comprehensive Java framework for enterprise applications with dependency injection and microservice architecture.",
+      "azure_openai": "Azure OpenAI brings GPT models into your enterprise infrastructure – secure, scalable, and GDPR-compliant.",
+      "ollama": "Ollama enables local execution of LLMs – full data control without cloud dependency.",
+      "azure": "Microsoft Azure offers comprehensive cloud services for computing, storage, AI, and DevOps.",
+      "aws": "Amazon Web Services is the leading cloud platform with over 200 services for every business size.",
+      "gcp": "Google Cloud Platform excels at big data, machine learning, and containerized infrastructure.",
+      "multicloud": "Multi-cloud strategies combine the strengths of different providers for maximum flexibility and resilience."
+    }
+  },
+  "process": {
+    "tag": "OUR PROCESS",
+    "title": "How we work",
+    "subtitle": "A proven approach for successful software projects.",
+    "steps": {
+      "discover": {
+        "title": "Analysis & Consulting",
+        "description": "We understand your requirements and develop the optimal strategy together."
+      },
+      "design": {
+        "title": "Concept & Design",
+        "description": "We design the architecture and user interface with a focus on usability."
+      },
+      "develop": {
+        "title": "Development",
+        "description": "Agile implementation with regular sprints, reviews, and transparent communication."
+      },
+      "deliver": {
+        "title": "Launch & Support",
+        "description": "Go-live support, monitoring, and long-term maintenance of your software solution."
+      }
+    }
+  },
+  "testimonial": {
+    "quote": "Modern software development also means: Creating full transparency for clients and developing the best solution together.",
+    "author": "Management",
+    "role": "Consulsoft GmbH"
+  },
+  "cta": {
+    "tag": "READY TO START?",
+    "title": "Let's discuss your next project",
+    "subtitle": "Contact us for a free initial consultation. We look forward to hearing from you.",
+    "button": "Get in touch",
+    "email": "info{'@'}consulsoft.de"
+  },
+  "teamPage": {
+    "tag": "OUR TEAM",
+    "title": "The people behind Consulsoft",
+    "subtitle": "Two founders, one vision: Modern software development at the highest level. We combine technical excellence with entrepreneurial thinking.",
+    "members": {
+      "naumche": {
+        "name": "Naumche Joshevski",
+        "role": "MANAGING DIRECTOR & DEVELOPER",
+        "position": "Co-Founder & Managing Director",
+        "bio1": "Naumche is a full-stack developer with a passion for clean architecture and scalable systems. With years of experience in enterprise projects, he brings deep technical knowledge and strategic thinking together.",
+        "bio2": "As Managing Director, he oversees the technical direction of Consulsoft and ensures that every project meets the highest quality standards. His expertise lies in modern web technologies, cloud architectures, and agile project management.",
+        "skills": "Angular, Vue.js, TypeScript, Java, Spring Boot, Cloud Architecture, Agile Leadership"
+      },
+      "dimitar": {
+        "name": "Dimitar Manev",
+        "role": "MANAGING DIRECTOR & DEVELOPER",
+        "position": "Co-Founder & Managing Director",
+        "bio1": "Dimitar is an experienced software developer with a strong focus on backend systems and DevOps. He loves turning complex problems into elegant, maintainable solutions.",
+        "bio2": "As co-founder of Consulsoft, he drives innovation and quality in every project. His strengths lie in developing robust APIs, database design, and business process automation.",
+        "skills": "C#, .NET Core, Python, Kotlin, DevOps, CI/CD, Microservices, Database Design"
+      }
+    },
+    "values": {
+      "title": "What drives us",
+      "handshake": {
+        "title": "Partnership",
+        "description": "We don't see ourselves as vendors, but as partners. Every project is a shared journey to success."
+      },
+      "code": {
+        "title": "Craftsmanship",
+        "description": "Clean code is no accident. We invest in quality, code reviews, and continuous improvement."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Technology never stands still – and neither do we. We constantly learn and share our knowledge."
+      }
+    }
+  },
+  "footer": {
+    "description": "Consulsoft builds tailored software solutions for businesses. Quality, transparency, and innovation are at our core.",
+    "links": "Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint",
+    "terms": "Terms",
+    "rights": "All rights reserved."
+  }
+}
