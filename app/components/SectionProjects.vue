@@ -9,12 +9,12 @@ const projects = [
     tech: ['Nuxt', 'TypeScript', 'Go', 'PostgreSQL'],
     image: '/project-immoreels/Xnapper-2026-03-31-13.21.16.png',
   },
-  {
-    key: 'pannenhilfe',
-    color: 'from-dark-700 to-dark-600',
-    tech: ['Nuxt', 'TypeScript', 'Go', 'Stripe'],
-    image: '/project-pannenhilfe/Xnapper-2026-03-31-13.28.33.png',
-  },
+  // {
+  //   key: 'pannenhilfe',
+  //   color: 'from-dark-700 to-dark-600',
+  //   tech: ['Nuxt', 'TypeScript', 'Go', 'Stripe'],
+  //   image: '/project-pannenhilfe/Xnapper-2026-03-31-13.28.33.png',
+  // },
 ]
 
 const activeProject = ref<number | null>(null)

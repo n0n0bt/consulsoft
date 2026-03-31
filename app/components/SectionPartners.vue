@@ -3,7 +3,7 @@ const { t } = useI18n()
 
 const partners = [
   { name: 'ImmoReels', url: 'https://immoreels24.de', logo: '/partners/logo-immoreels.svg' },
-  { name: 'MAT-C', url: 'https://mat-club.de', logo: '/partners/logo-matc.svg' },
+  // { name: 'MAT-C', url: 'https://mat-club.de', logo: '/partners/logo-matc.svg' },
 ]
 </script>
 

@@ -35,8 +35,8 @@ useSeoMeta({ robots: 'noindex, follow' })
           <h2 class="text-2xl font-bold text-dark-900 mb-4">Angaben gemäß § 5 TMG</h2>
           <p class="text-dark-400 leading-relaxed font-light">
             Consulsoft UG (haftungsbeschränkt)<br />
-            Musterstraße 1<br />
-            12345 Musterstadt
+            Nailaer Str. 39<br />
+            95119 Naila
           </p>
         </div>
 
@@ -61,8 +61,8 @@ useSeoMeta({ robots: 'noindex, follow' })
           <h2 class="text-2xl font-bold text-dark-900 mb-4">Registereintrag</h2>
           <p class="text-dark-400 leading-relaxed font-light">
             Eintragung im Handelsregister.<br />
-            Registergericht: Amtsgericht Musterstadt<br />
-            Registernummer: HRB 12345
+            Registergericht: Amtsgericht Hof<br />
+            Registernummer: HRB 7285
           </p>
         </div>
 
@@ -71,7 +71,7 @@ useSeoMeta({ robots: 'noindex, follow' })
           <h2 class="text-2xl font-bold text-dark-900 mb-4">Umsatzsteuer-ID</h2>
           <p class="text-dark-400 leading-relaxed font-light">
             Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            DE123456789
+            DE460662665
           </p>
         </div>
 

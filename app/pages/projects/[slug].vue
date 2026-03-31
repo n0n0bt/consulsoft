@@ -27,17 +27,17 @@ const projectData: Record<string, {
       { src: '/project-immoreels/Xnapper-2026-03-31-13.24.20.png', alt: 'Login - Light Mode' },
     ],
   },
-  pannenhilfe: {
-    tech: ['Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'Go', 'GORM'],
-    hero: '/project-pannenhilfe/Xnapper-2026-03-31-13.28.33.png',
-    color: 'from-dark-700 to-dark-600',
-    url: 'https://mat-club.de',
-    screenshots: [
-      { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.30.14.png', alt: 'Login & Anmeldung' },
-      { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.31.34.png', alt: 'Admin Dashboard' },
-      { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.31.50.png', alt: 'Mitgliederbereich' },
-    ],
-  },
+  // pannenhilfe: {
+  //   tech: ['Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'Go', 'GORM'],
+  //   hero: '/project-pannenhilfe/Xnapper-2026-03-31-13.28.33.png',
+  //   color: 'from-dark-700 to-dark-600',
+  //   url: 'https://mat-club.de',
+  //   screenshots: [
+  //     { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.30.14.png', alt: 'Login & Anmeldung' },
+  //     { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.31.34.png', alt: 'Admin Dashboard' },
+  //     { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.31.50.png', alt: 'Mitgliederbereich' },
+  //   ],
+  // },
 }
 
 const project = projectData[slug]
