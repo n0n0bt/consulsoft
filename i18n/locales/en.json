@@ -15,7 +15,7 @@
     "secondary": "Learn more"
   },
   "partners": {
-    "title": "Trusted by leading companies"
+    "title": "Our Clients & Partners"
   },
   "services": {
     "tag": "OUR SERVICES",
@@ -194,35 +194,25 @@
     "results": "Results",
     "otherProjects": "More projects",
     "items": {
-      "erp": {
-        "title": "Enterprise ERP Platform",
-        "short": "Complete ERP system for a mid-sized manufacturing company with real-time analytics and process automation.",
-        "overviewTitle": "Digitizing the entire value chain",
-        "description1": "Our client, a mid-sized manufacturing company with over 500 employees, needed a modern ERP system to replace their outdated legacy infrastructure. The goal was to digitize the entire value chain — from procurement and production planning to sales and financial reporting.",
-        "description2": "We developed a modular, cloud-native platform built on Angular and Spring Boot, deployed on Azure. The system features real-time dashboards, automated workflows, and seamless integration with existing third-party systems via REST APIs.",
-        "challenge": "Replace a 15-year-old legacy system without disrupting daily operations. Over 200 business processes needed to be mapped and modernized.",
-        "solution": "Phased migration with parallel operation. Modular architecture allowed us to replace components individually while maintaining full system availability.",
-        "results": "40% faster order processing | 60% reduction in manual data entry | 99.9% system uptime | ROI achieved within 14 months"
+      "immoreels": {
+        "title": "ImmoReels",
+        "short": "Video-first real estate platform with TikTok-inspired reel format, map search, and light/dark mode.",
+        "overviewTitle": "The future of property search is here",
+        "description1": "ImmoReels revolutionizes how people search for and discover real estate. Instead of static images, the platform takes a video-first approach: properties are presented as short, immersive video reels — inspired by TikTok. Users swipe through listings, experience rooms in motion, and make faster decisions.",
+        "description2": "The platform features a powerful map-based search, smart filters for buying/renting, property type and price, as well as full user profiles with saved properties and inquiries. Both light and dark mode ensure a comfortable experience at any time of day. Real estate agents have a dedicated portal to manage their listings.",
+        "challenge": "Create a property platform that fundamentally differs from existing portals, using video content to enable a more emotional, faster property search — for buyers, renters, and agents alike.",
+        "solution": "Video-first architecture with optimized streaming, responsive carousel design, and a dual theme engine for light and dark mode. Intuitive map search with real-time filtering and a dedicated agent portal.",
+        "results": "Video reels as core format for property presentation | Full light & dark mode | Map-based location search | Agent portal with listing management"
       },
-      "logistics": {
-        "title": "Smart Logistics Platform",
-        "short": "Real-time tracking and route optimization for a fleet of 200+ vehicles across Europe.",
-        "overviewTitle": "Intelligent fleet management at scale",
-        "description1": "A European logistics provider needed a platform to optimize their fleet operations across 8 countries. The existing system couldn't handle the complexity of real-time tracking, dynamic route planning, and compliance requirements across multiple jurisdictions.",
-        "description2": "We built a high-performance platform using Vue.js and Kotlin, deployed on AWS with Kubernetes. The system processes thousands of GPS updates per second, calculates optimal routes using machine learning, and provides real-time visibility into the entire fleet.",
-        "challenge": "Process 10,000+ GPS events per second with sub-second latency while calculating optimal routes across 8 countries with different regulations.",
-        "solution": "Event-driven architecture with Redis Streams for real-time processing. ML-based route optimization that considers traffic, weather, regulations, and driver rest times.",
-        "results": "23% reduction in fuel costs | 18% more deliveries per day | Real-time tracking for 200+ vehicles | Compliance automation across 8 countries"
-      },
-      "healthportal": {
-        "title": "Digital Health Portal",
-        "short": "Patient-facing health platform with AI-powered symptom assessment and appointment booking.",
-        "overviewTitle": "Making healthcare accessible and digital",
-        "description1": "A healthcare network with 45 clinics needed a unified patient portal to streamline appointment booking, provide digital health records access, and reduce the burden on administrative staff. Patient satisfaction scores were declining due to long wait times and manual processes.",
-        "description2": "We developed a HIPAA/GDPR-compliant portal using React and Python, with Azure as the cloud backbone. The platform includes an AI-powered symptom checker, intelligent appointment scheduling, secure messaging with providers, and integration with existing hospital information systems via FHIR standards.",
-        "challenge": "Build a platform that meets strict healthcare compliance requirements (GDPR, medical device regulations) while providing an intuitive consumer-grade experience.",
-        "solution": "Compliance-first architecture with end-to-end encryption, audit logging, and role-based access. AI models trained on anonymized clinical data for symptom assessment.",
-        "results": "35% reduction in no-show appointments | 50% fewer administrative phone calls | Patient satisfaction up from 3.2 to 4.7/5 | Fully GDPR and medical device compliant"
+      "pannenhilfe": {
+        "title": "MAT-C Roadside Assistance",
+        "short": "24/7 roadside assistance platform with member management, admin dashboard, and online contract system.",
+        "overviewTitle": "Roadside assistance that arrives — nationwide and Europe-wide",
+        "description1": "MAT-C is a digital platform for 24/7 roadside assistance across Germany and Europe. The system combines a modern marketing website with a full member portal: users can register, compare and purchase membership packages, manage their contracts, and instantly reach the emergency hotline.",
+        "description2": "For the operator, we built a comprehensive admin dashboard showing users, products, contracts, and revenue at a glance. The system includes contract statistics with flexible time ranges, email templates, digital membership cards, and complete contract management — all in a clean, modern interface.",
+        "challenge": "Build a platform that serves both as a public-facing website for customer acquisition and as an internal management system for members, contracts, and payments — with 24/7 availability.",
+        "solution": "Unified Nuxt application with role-based access control: public website, member area, and admin dashboard in a single codebase. Integrated payment processing and automated contract management.",
+        "results": "24/7 roadside assistance with <30 min response time | Digital member management | Admin dashboard with real-time statistics | Europe-wide coverage"
       }
     }
   },

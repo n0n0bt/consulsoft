@@ -11,35 +11,31 @@ const projectData: Record<string, {
   hero: string
   screenshots: { src: string; alt: string }[]
   color: string
+  url: string
 }> = {
-  erp: {
-    tech: ['Angular', 'Java', 'Spring Boot', 'Azure', 'PostgreSQL', 'Docker'],
-    hero: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&h=600&fit=crop',
+  immoreels: {
+    tech: ['Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'Go', 'PostgreSQL'],
+    hero: '/project-immoreels/Xnapper-2026-03-31-13.21.16.png',
     color: 'from-dark-900 to-dark-800',
+    url: 'https://immoreels24.de',
     screenshots: [
-      { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop', alt: 'Dashboard view' },
-      { src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop', alt: 'Analytics module' },
-      { src: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=500&fit=crop', alt: 'Reporting interface' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.22.21.png', alt: 'Video-Reels Karussell - Dark Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.23.13.png', alt: 'Immobilien-Reel Detailansicht' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.22.45.png', alt: 'Login - Dark Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.23.40.png', alt: 'Startseite - Light Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.24.08.png', alt: 'Video-Reels Karussell - Light Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.24.20.png', alt: 'Login - Light Mode' },
     ],
   },
-  logistics: {
-    tech: ['Vue.js', 'Kotlin', '.NET Core', 'AWS', 'Redis', 'Kubernetes'],
-    hero: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&h=600&fit=crop',
-    color: 'from-gold-500 to-gold-600',
-    screenshots: [
-      { src: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop', alt: 'Tracking dashboard' },
-      { src: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&h=500&fit=crop', alt: 'Route optimization' },
-      { src: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&h=500&fit=crop', alt: 'Fleet management' },
-    ],
-  },
-  healthportal: {
-    tech: ['React', 'Python', 'Azure', 'AI/ML', 'FHIR', 'Terraform'],
-    hero: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1400&h=600&fit=crop',
+  pannenhilfe: {
+    tech: ['Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'Go', 'GORM'],
+    hero: '/project-pannenhilfe/Xnapper-2026-03-31-13.28.33.png',
     color: 'from-dark-700 to-dark-600',
+    url: 'https://mat-club.de',
     screenshots: [
-      { src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop', alt: 'Patient portal' },
-      { src: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=500&fit=crop', alt: 'Appointment system' },
-      { src: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=800&h=500&fit=crop', alt: 'Analytics dashboard' },
+      { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.30.14.png', alt: 'Login & Anmeldung' },
+      { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.31.34.png', alt: 'Admin Dashboard' },
+      { src: '/project-pannenhilfe/Xnapper-2026-03-31-13.31.50.png', alt: 'Mitgliederbereich' },
     ],
   },
 }

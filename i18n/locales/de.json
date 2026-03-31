@@ -15,7 +15,7 @@
     "secondary": "Mehr erfahren"
   },
   "partners": {
-    "title": "Vertrauen führender Unternehmen"
+    "title": "Unsere Kunden & Partner"
   },
   "services": {
     "tag": "UNSERE LEISTUNGEN",
@@ -194,35 +194,25 @@
     "results": "Ergebnisse",
     "otherProjects": "Weitere Projekte",
     "items": {
-      "erp": {
-        "title": "Enterprise ERP-Plattform",
-        "short": "Komplettes ERP-System für ein mittelständisches Fertigungsunternehmen mit Echtzeit-Analysen und Prozessautomatisierung.",
-        "overviewTitle": "Digitalisierung der gesamten Wertschöpfungskette",
-        "description1": "Unser Kunde, ein mittelständisches Fertigungsunternehmen mit über 500 Mitarbeitern, benötigte ein modernes ERP-System als Ersatz für die veraltete Legacy-Infrastruktur. Ziel war die Digitalisierung der gesamten Wertschöpfungskette – von der Beschaffung über die Produktionsplanung bis hin zu Vertrieb und Finanzberichterstattung.",
-        "description2": "Wir entwickelten eine modulare, cloud-native Plattform auf Basis von Angular und Spring Boot, deployed auf Azure. Das System bietet Echtzeit-Dashboards, automatisierte Workflows und nahtlose Integration mit bestehenden Drittsystemen über REST APIs.",
-        "challenge": "Ablösung eines 15 Jahre alten Legacy-Systems ohne Unterbrechung des Tagesgeschäfts. Über 200 Geschäftsprozesse mussten erfasst und modernisiert werden.",
-        "solution": "Phasenweise Migration mit Parallelbetrieb. Die modulare Architektur ermöglichte den Austausch einzelner Komponenten bei voller Systemverfügbarkeit.",
-        "results": "40% schnellere Auftragsabwicklung | 60% weniger manuelle Dateneingaben | 99,9% Systemverfügbarkeit | ROI innerhalb von 14 Monaten erreicht"
+      "immoreels": {
+        "title": "ImmoReels",
+        "short": "Video-First Immobilienplattform mit TikTok-inspiriertem Reel-Format, Kartensuche und Light/Dark Mode.",
+        "overviewTitle": "Die Zukunft der Immobiliensuche ist da",
+        "description1": "ImmoReels revolutioniert die Art, wie Menschen Immobilien suchen und entdecken. Statt statischer Bilder setzt die Plattform auf ein Video-First-Konzept: Immobilien werden als kurze, immersive Video-Reels präsentiert – inspiriert vom TikTok-Format. Nutzer wischen durch Objekte, erleben Räume in Bewegung und treffen schnellere Entscheidungen.",
+        "description2": "Die Plattform bietet eine leistungsstarke Kartensuche, intelligente Filter nach Kaufen/Mieten, Objekttyp und Preis sowie ein vollständiges Nutzerprofil mit gespeicherten Immobilien und Anfragen. Sowohl Light als auch Dark Mode sorgen für ein angenehmes Nutzungserlebnis zu jeder Tageszeit. Für Makler gibt es einen eigenen Bereich zur Verwaltung ihrer Anzeigen.",
+        "challenge": "Eine Immobilienplattform schaffen, die sich fundamental von bestehenden Portalen unterscheidet und durch Video-Content eine emotionalere, schnellere Immobiliensuche ermöglicht – für Käufer, Mieter und Makler gleichermaßen.",
+        "solution": "Video-First-Architektur mit optimiertem Streaming, responsivem Karussell-Design und einer dualen Theme-Engine für Light und Dark Mode. Intuitive Kartensuche mit Echtzeit-Filterung und ein dediziertes Makler-Portal.",
+        "results": "Video-Reels als Kernformat für Immobilienpräsentation | Vollständiger Light & Dark Mode | Kartenbasierte Standortsuche | Makler-Portal mit Anzeigenverwaltung"
       },
-      "logistics": {
-        "title": "Smart Logistics Plattform",
-        "short": "Echtzeit-Tracking und Routenoptimierung für eine Flotte von 200+ Fahrzeugen in ganz Europa.",
-        "overviewTitle": "Intelligentes Flottenmanagement im großen Maßstab",
-        "description1": "Ein europäischer Logistikanbieter benötigte eine Plattform zur Optimierung seiner Flottenoperationen in 8 Ländern. Das bestehende System konnte die Komplexität von Echtzeit-Tracking, dynamischer Routenplanung und den Compliance-Anforderungen verschiedener Jurisdiktionen nicht bewältigen.",
-        "description2": "Wir haben eine hochperformante Plattform mit Vue.js und Kotlin entwickelt, deployed auf AWS mit Kubernetes. Das System verarbeitet tausende GPS-Updates pro Sekunde, berechnet optimale Routen mittels Machine Learning und bietet Echtzeit-Einblick in die gesamte Flotte.",
-        "challenge": "Verarbeitung von 10.000+ GPS-Events pro Sekunde mit Sub-Sekunden-Latenz bei gleichzeitiger Berechnung optimaler Routen über 8 Länder mit unterschiedlichen Vorschriften.",
-        "solution": "Event-Driven-Architektur mit Redis Streams für Echtzeit-Verarbeitung. ML-basierte Routenoptimierung unter Berücksichtigung von Verkehr, Wetter, Vorschriften und Fahrerruhezeiten.",
-        "results": "23% Reduktion der Kraftstoffkosten | 18% mehr Lieferungen pro Tag | Echtzeit-Tracking für 200+ Fahrzeuge | Compliance-Automatisierung in 8 Ländern"
-      },
-      "healthportal": {
-        "title": "Digitales Gesundheitsportal",
-        "short": "Patientenportal mit KI-gestützter Symptomerfassung und Terminbuchung.",
-        "overviewTitle": "Gesundheitsversorgung digital und zugänglich machen",
-        "description1": "Ein Gesundheitsnetzwerk mit 45 Kliniken benötigte ein einheitliches Patientenportal zur Vereinfachung der Terminbuchung, digitalen Zugang zu Gesundheitsakten und Entlastung des Verwaltungspersonals. Die Patientenzufriedenheit sank aufgrund langer Wartezeiten und manueller Prozesse.",
-        "description2": "Wir entwickelten ein DSGVO-konformes Portal mit React und Python, mit Azure als Cloud-Backbone. Die Plattform umfasst einen KI-gestützten Symptom-Checker, intelligente Terminplanung, sicheres Messaging mit Ärzten und Integration mit bestehenden Krankenhausinformationssystemen via FHIR-Standards.",
-        "challenge": "Aufbau einer Plattform, die strenge Compliance-Anforderungen im Gesundheitswesen (DSGVO, Medizinprodukteverordnung) erfüllt und gleichzeitig eine intuitive Consumer-Erfahrung bietet.",
-        "solution": "Compliance-First-Architektur mit Ende-zu-Ende-Verschlüsselung, Audit-Logging und rollenbasierter Zugriffskontrolle. KI-Modelle trainiert auf anonymisierten klinischen Daten.",
-        "results": "35% weniger Terminausfälle | 50% weniger administrative Anrufe | Patientenzufriedenheit von 3,2 auf 4,7/5 gestiegen | Voll DSGVO- und medizinproduktkonform"
+      "pannenhilfe": {
+        "title": "MAT-C Pannenhilfe",
+        "short": "24/7 Pannenhilfe-Plattform mit Mitgliederverwaltung, Admin-Dashboard und Online-Vertragssystem.",
+        "overviewTitle": "Pannenhilfe, die ankommt – deutschlandweit und europaweit",
+        "description1": "MAT-C ist eine digitale Plattform für 24/7-Pannenhilfe in ganz Deutschland und Europa. Das System verbindet eine moderne Marketing-Website mit einem vollständigen Mitgliederportal: Nutzer können sich registrieren, Mitgliedschaftspakete vergleichen und abschließen, ihre Verträge verwalten und im Notfall sofort die Pannenhilfe-Hotline erreichen.",
+        "description2": "Für den Betreiber haben wir ein umfassendes Admin-Dashboard entwickelt, das Benutzer, Produkte, Verträge und Umsätze auf einen Blick zeigt. Das System umfasst Vertragsstatistiken mit flexiblen Zeiträumen, E-Mail-Vorlagen, digitale Mitgliedskarten und eine vollständige Vertragsverwaltung – alles in einer modernen, übersichtlichen Oberfläche.",
+        "challenge": "Eine Plattform entwickeln, die sowohl als öffentliche Website zur Kundengewinnung als auch als internes Verwaltungssystem für Mitglieder, Verträge und Zahlungen funktioniert – mit 24/7 Erreichbarkeit.",
+        "solution": "Einheitliche Nuxt-Anwendung mit rollenbasierter Zugriffskontrolle: öffentliche Website, Mitgliederbereich und Admin-Dashboard in einer Codebasis. Integrierte Zahlungsabwicklung und automatisierte Vertragsverwaltung.",
+        "results": "24/7 Pannenhilfe mit <30 Min Reaktionszeit | Digitale Mitgliederverwaltung | Admin-Dashboard mit Echtzeit-Statistiken | Europaweite Abdeckung"
       }
     }
   },

@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const partners = ['SAP', 'Siemens', 'Deutsche Bahn', 'Bosch', 'Allianz', 'BMW']
+const partners = [
+  { name: 'ImmoReels', url: 'https://immoreels24.de', logo: '/partners/logo-immoreels.svg' },
+  { name: 'MAT-C', url: 'https://mat-club.de', logo: '/partners/logo-matc.svg' },
+]
 </script>
 
 <template>
@@ -10,14 +13,17 @@ const partners = ['SAP', 'Siemens', 'Deutsche Bahn', 'Bosch', 'Allianz', 'BMW']
       <p class="text-center text-[11px] font-semibold text-dark-300 tracking-[0.2em] mb-10 uppercase">
         {{ t('partners.title') }}
       </p>
-      <div class="flex flex-wrap items-center justify-center gap-x-14 gap-y-6">
-        <span
+      <div class="flex flex-wrap items-center justify-center gap-x-16 gap-y-8">
+        <a
           v-for="partner in partners"
-          :key="partner"
-          class="text-dark-200 text-xl font-bold tracking-tight hover:text-dark-400 transition-colors duration-300 cursor-default"
+          :key="partner.name"
+          :href="partner.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="opacity-60 hover:opacity-100 transition-opacity duration-300"
         >
-          {{ partner }}
-        </span>
+          <img :src="partner.logo" :alt="partner.name" class="h-10 w-auto" />
+        </a>
       </div>
     </div>
   </section>

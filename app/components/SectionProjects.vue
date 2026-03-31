@@ -4,22 +4,16 @@ const localePath = useLocalePath()
 
 const projects = [
   {
-    key: 'erp',
+    key: 'immoreels',
     color: 'from-dark-900 to-dark-800',
-    tech: ['Angular', 'Java', 'Spring Boot', 'Azure'],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
+    tech: ['Nuxt', 'TypeScript', 'Go', 'PostgreSQL'],
+    image: '/project-immoreels/Xnapper-2026-03-31-13.21.16.png',
   },
   {
-    key: 'logistics',
-    color: 'from-gold-400 to-gold-500',
-    tech: ['Vue.js', 'Kotlin', '.NET Core', 'AWS'],
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop',
-  },
-  {
-    key: 'healthportal',
+    key: 'pannenhilfe',
     color: 'from-dark-700 to-dark-600',
-    tech: ['React', 'Python', 'Azure', 'AI'],
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop',
+    tech: ['Nuxt', 'TypeScript', 'Go', 'Stripe'],
+    image: '/project-pannenhilfe/Xnapper-2026-03-31-13.28.33.png',
   },
 ]
 
@@ -47,7 +41,7 @@ const activeProject = ref<number | null>(null)
       </div>
 
       <!-- Project cards -->
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 gap-6">
         <NuxtLink
           v-for="(project, i) in projects"
           :key="project.key"
