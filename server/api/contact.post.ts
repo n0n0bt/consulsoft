@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Form-Key': '',
+        'X-Form-Key': 'pk_al_zNrM2KCZXRUOUeeJPeQ',
       },
       body: JSON.stringify({
         to: ['info@consulsoft.de'],
