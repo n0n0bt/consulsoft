@@ -30,15 +30,6 @@ useSeoMeta({ robots: 'noindex, follow' })
     <!-- Content -->
     <section class="py-20 bg-white">
       <div class="max-w-3xl mx-auto px-6 lg:px-8">
-        <!-- Hinweis -->
-        <div class="fade-up mb-12 p-6 bg-surface-50 rounded-2xl border border-dark-100">
-          <p class="text-dark-400 text-sm leading-relaxed font-light">
-            <strong class="text-dark-900">Hinweis:</strong> Diese Datenschutzerklärung dient als Vorlage und muss
-            an die konkreten Datenverarbeitungsprozesse Ihres Unternehmens angepasst werden. Bitte lassen Sie diese
-            von einem Rechtsanwalt prüfen.
-          </p>
-        </div>
-
         <!-- 1. Verantwortliche Stelle -->
         <div class="fade-up mb-12">
           <h2 class="text-2xl font-bold text-dark-900 mb-4">1. Verantwortliche Stelle</h2>
@@ -47,8 +38,8 @@ useSeoMeta({ robots: 'noindex, follow' })
           </p>
           <p class="text-dark-400 leading-relaxed font-light mt-4">
             Consulsoft UG (haftungsbeschränkt)<br />
-            Musterstraße 1<br />
-            12345 Musterstadt<br />
+            Nailaer Str. 39<br />
+            95119 Naila<br />
             E-Mail: info@consulsoft.de
           </p>
           <p class="text-dark-400 leading-relaxed font-light mt-4">
@@ -100,19 +91,13 @@ useSeoMeta({ robots: 'noindex, follow' })
         <div class="fade-up mb-12" style="transition-delay: 0.15s">
           <h2 class="text-2xl font-bold text-dark-900 mb-4">4. Cookies</h2>
           <p class="text-dark-400 leading-relaxed font-light">
-            Unsere Website verwendet Cookies. Dabei handelt es sich um kleine Textdateien, die Ihr Webbrowser auf
-            Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und
-            sicherer zu machen.
+            Unsere Website verwendet keine externen Cookies und keine Tracking- oder Analyse-Cookies. Es werden
+            keine Cookies von Drittanbietern gesetzt. Wir verzichten bewusst auf den Einsatz von Tools wie
+            Google Analytics oder vergleichbaren Diensten.
           </p>
           <p class="text-dark-400 leading-relaxed font-light mt-4">
-            Einige Cookies sind "Session-Cookies". Solche Cookies werden nach Ende Ihrer Browser-Sitzung von selbst
-            gelöscht. Hingegen bleiben andere Cookies auf Ihrem Endgerät bestehen, bis Sie diese selbst löschen.
-            Solche Cookies helfen uns, Sie bei Rückkehr auf unserer Website wiederzuerkennen.
-          </p>
-          <p class="text-dark-400 leading-relaxed font-light mt-4">
-            Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und
-            Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell
-            ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren.
+            Soweit technisch notwendige Cookies verwendet werden, dienen diese ausschließlich der Funktionalität
+            der Website und werden nach Ende Ihrer Browser-Sitzung automatisch gelöscht.
           </p>
         </div>
 
@@ -120,14 +105,18 @@ useSeoMeta({ robots: 'noindex, follow' })
         <div class="fade-up mb-12" style="transition-delay: 0.2s">
           <h2 class="text-2xl font-bold text-dark-900 mb-4">5. Hosting</h2>
           <p class="text-dark-400 leading-relaxed font-light">
-            Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die
-            auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich
-            v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten,
-            Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
+            Diese Website wird bei Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA gehostet.
+            Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern von Netlify
+            gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten,
+            Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert
+            werden, handeln.
           </p>
           <p class="text-dark-400 leading-relaxed font-light mt-4">
-            Der Einsatz des Hosters erfolgt im Interesse einer sicheren, schnellen und effizienten Bereitstellung
-            unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).
+            Der Einsatz von Netlify erfolgt im Interesse einer sicheren, schnellen und effizienten Bereitstellung
+            unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Netlify
+            verarbeitet Daten auch in den USA. Wir weisen darauf hin, dass nach Meinung des EuGH derzeit kein
+            angemessenes Schutzniveau für den Datentransfer in die USA besteht. Weitere Informationen finden Sie in
+            der Datenschutzerklärung von Netlify: https://www.netlify.com/privacy/
           </p>
         </div>
 
