@@ -1,148 +1,211 @@
 {
   "nav": {
     "services": "Leistungen",
-    "about": "Über uns",
+    "work": "Arbeiten",
     "process": "Prozess",
-    "projects": "Projekte",
+    "team": "Team",
     "contact": "Kontakt",
-    "team": "Team"
+    "cta": "Gespräch buchen",
+    "menu": "Menü"
   },
   "hero": {
-    "tag": "SOFTWARE FÜR UNTERNEHMEN",
-    "title": "Moderne Softwareentwicklung",
-    "subtitle": "Wir entwickeln maßgeschneiderte Softwarelösungen, die Ihr Unternehmen voranbringen.",
-    "cta": "Projekt anfragen",
-    "secondary": "Mehr erfahren"
+    "titleLine1": "Sie haben die Vision.",
+    "titleLine2": "Wir bauen die",
+    "subtitle": "Individuelle Web-Apps, Desktop-Programme für macOS und Windows, mobile Apps und KI-Automationen.",
+    "cta": "Anfrage starten",
+    "secondary": "Oder erst die Leistungen ansehen",
+    "proof1": "Direkt mit den Gründern",
+    "proof2": "Vier Plattformen, ein Team",
+    "emailPlaceholder": "ihre{'@'}firma.de",
+    "emailLabel": "Ihre E-Mail-Adresse",
+    "emailHint": "Vier kurze Fragen zu Ihrem Vorhaben. Antwort von einem der Gründer.",
+    "titleAccent": "Technologie."
   },
-  "partners": {
-    "title": "Unsere Kunden & Partner"
+  "stack": {
+    "title": "Womit wir arbeiten"
   },
   "services": {
-    "tag": "UNSERE LEISTUNGEN",
-    "title": "Lösungen für Ihren Erfolg",
-    "subtitle": "Wir bieten umfassende Softwareentwicklung – von der Beratung bis zur Umsetzung.",
+    "eyebrow": "Leistungen",
+    "title": "Vier Oberflächen, ein Team",
+    "subtitle": "Die meisten Anwendungen brauchen mehr als einen Ort, an dem sie laufen. Wir bauen alle vier – und entscheiden mit Ihnen, welche Sie wirklich brauchen.",
     "items": {
       "web": {
-        "title": "Web-Applikationen",
-        "description": "Moderne, skalierbare Webanwendungen mit aktuellen Technologien und Frameworks."
+        "title": "Web-Apps",
+        "description": "Portale, Dashboards und Kundenbereiche, die im Browser laufen und mit Ihren bestehenden Systemen sprechen."
+      },
+      "desktop": {
+        "title": "Desktop für macOS und Windows",
+        "description": "Programme, die lokal laufen: für Arbeitsplätze ohne verlässliches Netz, für große Dateien und für direkten Zugriff auf Geräte und Dateisystem."
       },
       "mobile": {
         "title": "Mobile Apps",
-        "description": "Native und Cross-Platform Apps für iOS und Android mit erstklassiger User Experience."
-      },
-      "cloud": {
-        "title": "Cloud & DevOps",
-        "description": "Cloud-native Architekturen, CI/CD Pipelines und Infrastruktur-Automatisierung."
-      },
-      "consulting": {
-        "title": "IT-Beratung",
-        "description": "Strategische Beratung für digitale Transformation und Technologie-Entscheidungen."
-      },
-      "api": {
-        "title": "API & Integration",
-        "description": "Nahtlose Systemintegration und API-Entwicklung für vernetzte Geschäftsprozesse."
+        "description": "iOS und Android. Nativ, wenn es auf Performance ankommt – plattformübergreifend, wenn das schneller zum Ziel führt."
       },
       "ai": {
-        "title": "KI & Automatisierung",
-        "description": "Intelligente Automatisierungslösungen und KI-Integration für effizientere Abläufe."
+        "title": "KI-Automationen",
+        "description": "Vorgänge, die heute jemand von Hand erledigt: Dokumente auslesen, Daten übertragen, Anfragen vorsortieren. Auf Wunsch mit Modellen, die Ihr Haus nicht verlassen."
+      }
+    },
+    "surfaceLabel": "Oberfläche auswählen",
+    "more": "Mehr erfahren"
+  },
+  "compare": {
+    "eyebrow": "Arbeitsweise",
+    "title": "Woran Softwareprojekte scheitern – und was wir anders machen",
+    "subtitle": "Die häufigsten Gründe, warum Auftraggeber von Softwareprojekten enttäuscht werden, und wie wir ihnen begegnen.",
+    "headLeft": "Das Übliche",
+    "headRight": "Bei uns",
+    "rows": {
+      "handoff": {
+        "problem": "Sie sprechen mit dem Vertrieb, entwickelt wird woanders",
+        "answer": "Sie sprechen mit den beiden, die den Code schreiben"
+      },
+      "scope": {
+        "problem": "Der Umfang wächst, die Rechnung wächst mit",
+        "answer": "Umfang und Preis stehen fest, bevor wir anfangen"
+      },
+      "surface": {
+        "problem": "Für Desktop oder Mobil kommt ein zweiter Dienstleister dazu",
+        "answer": "Web, Desktop und Mobil aus demselben Team"
+      },
+      "ai": {
+        "problem": "KI steht als Schlagwort im Angebot",
+        "answer": "Automationen für benannte Vorgänge, mit messbarer Zeitersparnis"
+      },
+      "lockin": {
+        "problem": "Ohne den Dienstleister läuft nichts mehr",
+        "answer": "Quellcode, Repositories und Zugänge liegen bei Ihnen"
       }
     }
   },
-  "about": {
-    "tag": "WARUM CONSULSOFT",
-    "title": "Ihr Partner für digitale Innovation",
-    "description": "Wenn es um moderne Softwareentwicklung geht, sind wir der richtige Ansprechpartner. Wir entwickeln Lösungen basierend auf den neuesten Technologien und Methoden.",
-    "stats": {
-      "experience": "Jahre Erfahrung",
-      "projects": "Erfolgreiche Projekte",
-      "experts": "Expert*innen",
-      "satisfaction": "Kundenzufriedenheit"
-    },
-    "points": {
-      "quality": "Höchste Qualitätsstandards und agile Methoden",
-      "transparency": "Volle Transparenz in jedem Projektschritt",
-      "partner": "Zertifizierter Microsoft & AWS Partner",
-      "iso": "ISO 9001 zertifiziert"
-    },
-    "circles": {
-      "agile": {
-        "label": "Agile\nMethoden",
-        "description": "Wir arbeiten in kurzen Sprints mit regelmäßigem Feedback. So können Sie jederzeit den Fortschritt sehen und Prioritäten anpassen."
-      },
-      "cloud": {
-        "label": "Cloud\nNative",
-        "description": "Unsere Lösungen sind von Anfang an für die Cloud konzipiert – skalierbar, ausfallsicher und optimiert für Ihre Infrastruktur."
-      },
-      "ai": {
-        "label": "KI &\nAutomation",
-        "description": "Wir integrieren moderne KI-Modelle und Automatisierung in Ihre Geschäftsprozesse für maximale Effizienz."
-      },
-      "security": {
-        "label": "Enterprise\nSecurity",
-        "description": "Sicherheit steht bei uns an erster Stelle. DSGVO-konform, ISO-zertifiziert und nach höchsten Standards entwickelt."
-      }
-    }
-  },
-  "tech": {
-    "title": "Technologien, die wir für Sie einsetzen",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "ai": "KI",
-    "cloud": "Cloud",
+  "work": {
+    "eyebrow": "Arbeiten",
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Wir sind ein junges Unternehmen und zeigen lieber ein Projekt im Detail als zehn Logos ohne Inhalt.",
+    "view": "Projekt ansehen",
     "items": {
-      "angular": "Angular ist ein leistungsstarkes Framework für komplexe Enterprise-Webanwendungen mit TypeScript, modularer Architektur und umfangreichem Ökosystem.",
-      "vue": "Vue.js kombiniert Einfachheit mit Flexibilität – ideal für performante, reaktive Benutzeroberflächen und Single-Page-Applications.",
-      "react": "React ermöglicht komponentenbasierte UIs mit hoher Wiederverwendbarkeit. Perfekt für dynamische, datengetriebene Webanwendungen.",
-      "java": "Java ist eine robuste, plattformunabhängige Sprache für stabile und skalierbare Unternehmensanwendungen mit hohen Sicherheitsanforderungen.",
-      "csharp": "C# bietet in Kombination mit .NET eine leistungsstarke Plattform für Enterprise-Software, APIs und Cloud-Anwendungen.",
-      "kotlin": "Kotlin ist modern, prägnant und vollständig interoperabel mit Java – ideal für Android-Entwicklung und Backend-Services.",
-      "python": "Python überzeugt durch Vielseitigkeit: von Data Science über Automatisierung bis hin zu Web-Backends und KI-Anwendungen.",
-      "node": "Node.js ermöglicht serverseitiges JavaScript mit hoher Performance – perfekt für Echtzeit-Anwendungen und Microservices.",
-      "dotnet": ".NET Core ist ein plattformübergreifendes Framework für hochperformante APIs, Cloud-Services und Enterprise-Anwendungen.",
-      "php": "PHP ist eine weit verbreitete Scriptsprache für serverseitige Webentwicklung – ideal für Portale, CMS und Business-Websites.",
-      "spring": "Spring bietet ein umfassendes Java-Framework für Enterprise-Anwendungen mit Dependency Injection und Microservice-Architektur.",
-      "azure_openai": "Azure OpenAI bringt GPT-Modelle in Ihre Unternehmensinfrastruktur – sicher, skalierbar und DSGVO-konform.",
-      "ollama": "Ollama ermöglicht das lokale Ausführen von LLMs – volle Datenkontrolle ohne Cloud-Abhängigkeit.",
-      "azure": "Microsoft Azure bietet umfassende Cloud-Dienste für Computing, Storage, KI und DevOps.",
-      "aws": "Amazon Web Services ist die führende Cloud-Plattform mit über 200 Services für jede Unternehmensgröße.",
-      "gcp": "Google Cloud Platform überzeugt bei Big Data, Machine Learning und containerisierter Infrastruktur.",
-      "multicloud": "Multi-Cloud-Strategien kombinieren die Stärken verschiedener Anbieter für maximale Flexibilität und Ausfallsicherheit."
+      "immoreels": {
+        "title": "ImmoReels",
+        "summary": "Eine Plattform, auf der Maklerbüros Immobilien als kurze Videos zeigen – mit Suche, Karte und Maklerbereich."
+      }
+    },
+    "next": {
+      "eyebrow": "Ihr Projekt",
+      "body": "Der nächste Platz hier ist frei. Erzählen Sie uns, was Sie bauen wollen.",
+      "cta": "Projekt besprechen"
     }
   },
   "process": {
-    "tag": "UNSER PROZESS",
-    "title": "Wie wir arbeiten",
-    "subtitle": "Ein bewährter Ansatz für erfolgreiche Softwareprojekte.",
+    "eyebrow": "Prozess",
+    "title": "Wie ein Projekt bei uns abläuft",
+    "subtitle": "Vier Schritte, die wir bei jedem Projekt gleich halten – damit Sie jederzeit wissen, woran Sie sind.",
     "steps": {
-      "discover": {
-        "title": "Analyse & Beratung",
-        "description": "Wir verstehen Ihre Anforderungen und erarbeiten gemeinsam die optimale Strategie."
+      "talk": {
+        "title": "Gespräch",
+        "description": "Wir hören zu, stellen Rückfragen und sagen Ihnen ehrlich, ob wir die Richtigen für die Aufgabe sind."
       },
-      "design": {
-        "title": "Konzept & Design",
-        "description": "Wir gestalten die Architektur und das User Interface mit Fokus auf Benutzerfreundlichkeit."
+      "scope": {
+        "title": "Umfang & Angebot",
+        "description": "Wir schreiben auf, was gebaut wird, was es kostet und wann es fertig ist – bevor die erste Zeile entsteht."
       },
-      "develop": {
+      "build": {
         "title": "Entwicklung",
-        "description": "Agile Umsetzung mit regelmäßigen Sprints, Reviews und transparenter Kommunikation."
+        "description": "Kurze Sprints mit lauffähigen Zwischenständen. Sie sehen den Fortschritt, nicht nur den Statusbericht."
       },
-      "deliver": {
-        "title": "Launch & Support",
-        "description": "Go-Live Begleitung, Monitoring und langfristige Wartung Ihrer Softwarelösung."
+      "handover": {
+        "title": "Übergabe & Betrieb",
+        "description": "Livegang, Dokumentation und Zugänge bei Ihnen. Danach Wartung, wenn Sie sie wollen – nicht, weil Sie müssen."
       }
     }
   },
-  "testimonial": {
-    "quote": "Moderne Softwareentwicklung bedeutet auch: Volle Transparenz für Kunden schaffen und gemeinsam die beste Lösung entwickeln.",
-    "author": "Geschäftsführung",
-    "role": "Consulsoft GmbH"
+  "faq": {
+    "title": "Fragen, die wir am häufigsten hören",
+    "items": {
+      "cost": {
+        "q": "Was kostet ein Projekt?",
+        "a": "Das hängt vom Umfang ab – aber Sie erfahren die Zahl vor dem Start und nicht danach. Nach dem ersten Gespräch bekommen Sie ein Angebot mit festem Umfang und festem Preis."
+      },
+      "time": {
+        "q": "Wie lange dauert es bis zum Livegang?",
+        "a": "Kleinere Anwendungen und Automationen in Wochen, größere Plattformen in Monaten. Einen belastbaren Termin nennen wir erst, wenn wir den Umfang kennen."
+      },
+      "code": {
+        "q": "Gehört mir der Quellcode?",
+        "a": "Ja. Repository, Zugänge und Dokumentation liegen bei Ihnen – auch wenn die Zusammenarbeit endet."
+      },
+      "existing": {
+        "q": "Können Sie bestehende Software übernehmen?",
+        "a": "Häufig ja. Wir sehen uns den Bestand an und sagen Ihnen, ob Weiterentwicklung oder Neubau der günstigere Weg ist."
+      },
+      "data": {
+        "q": "Wo laufen meine Daten?",
+        "a": "Wo Sie es wollen. Für KI-Funktionen setzen wir auf Wunsch lokale Modelle ein, sodass keine Daten Ihr Haus verlassen."
+      },
+      "remote": {
+        "q": "Arbeiten Sie auch außerhalb Bayerns?",
+        "a": "Ja. Wir arbeiten remote und deutschlandweit; für Termine vor Ort finden wir eine Lösung."
+      }
+    }
   },
   "cta": {
-    "tag": "BEREIT ZU STARTEN?",
-    "title": "Lassen Sie uns Ihr nächstes Projekt besprechen",
-    "subtitle": "Kontaktieren Sie uns für ein unverbindliches Erstgespräch. Wir freuen uns auf Ihre Anfrage.",
-    "button": "Kontakt aufnehmen",
-    "email": "info{'@'}consulsoft.de"
+    "explore": {
+      "title": "Noch unklar, was Sie brauchen?",
+      "body": "In 30 Minuten sortieren wir gemeinsam, welche Vorgänge sich zu automatisieren lohnen und was ein sinnvoller erster Schritt wäre.",
+      "button": "Strategiegespräch vereinbaren"
+    },
+    "ready": {
+      "title": "Sie wissen schon, was Sie wollen?",
+      "body": "Schicken Sie uns Umfang und Zeitrahmen. Die Einschätzung kommt von einem der Gründer, nicht aus dem Vertrieb.",
+      "button": "Gespräch buchen"
+    }
+  },
+  "footer": {
+    "blurb": "Individuelle Software für Web, Desktop und Mobil – plus die Automationen, die Ihnen Arbeit abnehmen.",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "reach": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "made": "Entwickelt in Naila, Bayern"
+  },
+  "seo": {
+    "home": {
+      "title": "Individuelle Software für Web, Desktop, Mobil und KI",
+      "description": "Consulsoft entwickelt Web-Apps, Desktop-Programme für macOS und Windows, mobile Apps und KI-Automationen. Zwei Gründer, die selbst entwickeln. Aus Naila, Bayern."
+    }
+  },
+  "contactPage": {
+    "tag": "KONTAKT",
+    "title": "Sprechen Sie mit uns",
+    "subtitle": "Erzählen Sie uns von Ihrem Projekt. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr vollständiger Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "ihre{'@'}email.de",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Ihr Unternehmen",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 ...",
+      "message": "Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info{'@'}consulsoft.de."
+    },
+    "success": {
+      "title": "Nachricht gesendet!",
+      "message": "Vielen Dank für Ihre Anfrage. Wir melden uns schnellstmöglich bei Ihnen.",
+      "another": "Weitere Nachricht senden"
+    },
+    "info": {
+      "email": "E-Mail",
+      "location": "Standort",
+      "address": "Deutschland",
+      "responseTitle": "Schnelle Antwort",
+      "responseText": "Wir antworten in der Regel innerhalb von 24 Stunden auf Ihre Anfrage."
+    }
   },
   "teamPage": {
     "tag": "UNSER TEAM",
@@ -182,6 +245,14 @@
       }
     }
   },
+  "thankYouPage": {
+    "tag": "VIELEN DANK",
+    "title": "Ihre Nachricht ist angekommen!",
+    "message": "Vielen Dank für Ihre Anfrage. Unser Team wird sich so schnell wie möglich bei Ihnen melden.",
+    "responseInfo": "Sie erhalten in der Regel innerhalb von 24 Stunden eine Antwort von uns.",
+    "backHome": "Zurück zur Startseite",
+    "sendAnother": "Weitere Nachricht senden"
+  },
   "projects": {
     "tag": "UNSERE PROJEKTE",
     "title": "Ausgewählte Arbeiten",
@@ -216,53 +287,517 @@
       }
     }
   },
-  "thankYouPage": {
-    "tag": "VIELEN DANK",
-    "title": "Ihre Nachricht ist angekommen!",
-    "message": "Vielen Dank für Ihre Anfrage. Unser Team wird sich so schnell wie möglich bei Ihnen melden.",
-    "responseInfo": "Sie erhalten in der Regel innerhalb von 24 Stunden eine Antwort von uns.",
-    "backHome": "Zurück zur Startseite",
-    "sendAnother": "Weitere Nachricht senden"
-  },
-  "contactPage": {
-    "tag": "KONTAKT",
-    "title": "Sprechen Sie mit uns",
-    "subtitle": "Erzählen Sie uns von Ihrem Projekt. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-    "form": {
+  "brief": {
+    "title": "Projektanfrage",
+    "stepOf": "Schritt {current} von {total}",
+    "close": "Anfrage abbrechen",
+    "back": "Zurück",
+    "cancel": "Abbrechen",
+    "next": "Weiter",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "error": "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info{'@'}consulsoft.de.",
+    "steps": {
+      "project": {
+        "eyebrow": "Vorhaben",
+        "question": "Was sollen wir für Sie bauen?",
+        "hint": "Mehrfachauswahl möglich – wenn Sie unsicher sind, wählen Sie, was am ehesten passt."
+      },
+      "task": {
+        "eyebrow": "Aufgabe",
+        "question": "Worum geht es konkret?",
+        "hint": "Ein paar Sätze reichen. Je konkreter der Vorgang, desto belastbarer unsere Einschätzung."
+      },
+      "scope": {
+        "eyebrow": "Rahmen",
+        "question": "Wann soll es laufen, und mit welchem Budget?",
+        "hint": "Beides hilft uns einzuschätzen, ob und wie wir das Projekt sinnvoll umsetzen können."
+      },
+      "contact": {
+        "eyebrow": "Kontakt",
+        "question": "Wie erreichen wir Sie?",
+        "hint": "Die Einschätzung kommt von Naumche oder Dimitar – nicht aus dem Vertrieb."
+      },
+      "pain": {
+        "eyebrow": "Ausgangslage",
+        "question": "Wo verlieren Sie heute Zeit?",
+        "hint": "Mehrfachauswahl. Wir suchen den Vorgang, bei dem sich eine Lösung am schnellsten rechnet."
+      },
+      "timing": {
+        "eyebrow": "Zeitrahmen",
+        "question": "Wie dringend ist das?",
+        "hint": "Grobe Einschätzung genügt – wir fragen im Gespräch genauer nach."
+      },
+      "details": {
+        "eyebrow": "Details",
+        "question": "Ein paar Details zu Ihrer Auswahl",
+        "hint": "Je eine kurze Frage – genau die Punkte, die Aufwand und Preis am stärksten beeinflussen."
+      }
+    },
+    "surfaces": {
+      "web": {
+        "title": "Web-App",
+        "hint": "Portal, Dashboard oder Kundenbereich im Browser"
+      },
+      "desktop": {
+        "title": "Desktop-Programm",
+        "hint": "Für macOS, Windows oder beides"
+      },
+      "mobile": {
+        "title": "Mobile App",
+        "hint": "iOS, Android oder beides"
+      },
+      "ai": {
+        "title": "KI-Automation",
+        "hint": "Vorgänge, die heute von Hand erledigt werden"
+      }
+    },
+    "fields": {
+      "description": "Beschreibung",
+      "descriptionPlaceholder": "Zum Beispiel: Unsere Aufträge kommen per E-Mail als PDF und werden von Hand ins ERP übertragen…",
+      "timeline": "Zeitrahmen",
+      "budget": "Budgetrahmen",
       "name": "Name",
-      "namePlaceholder": "Ihr vollständiger Name",
       "email": "E-Mail",
-      "emailPlaceholder": "ihre{'@'}email.de",
       "company": "Unternehmen",
-      "companyPlaceholder": "Ihr Unternehmen",
       "phone": "Telefon",
-      "phonePlaceholder": "+49 ...",
-      "message": "Nachricht",
-      "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Anfrage...",
-      "submit": "Nachricht senden",
-      "sending": "Wird gesendet...",
-      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info{'@'}consulsoft.de."
+      "descriptionExplore": "Zum Beispiel: Zwei Mitarbeiterinnen übertragen jeden Morgen Bestellungen aus E-Mails in unser Warenwirtschaftssystem…"
     },
-    "success": {
-      "title": "Nachricht gesendet!",
-      "message": "Vielen Dank für Ihre Anfrage. Wir melden uns schnellstmöglich bei Ihnen.",
-      "another": "Weitere Nachricht senden"
+    "timelines": {
+      "asap": "So bald wie möglich",
+      "quarter": "In 1–3 Monaten",
+      "halfyear": "In 3–6 Monaten",
+      "open": "Noch offen"
     },
-    "info": {
-      "email": "E-Mail",
-      "location": "Standort",
-      "address": "Deutschland",
-      "responseTitle": "Schnelle Antwort",
-      "responseText": "Wir antworten in der Regel innerhalb von 24 Stunden auf Ihre Anfrage."
+    "budgets": {
+      "s": "Unter 10.000 €",
+      "m": "10.000 – 25.000 €",
+      "l": "25.000 – 50.000 €",
+      "xl": "Über 50.000 €",
+      "unknown": "Noch unklar"
+    },
+    "summary": {
+      "surfaces": "Vorhaben",
+      "timeline": "Zeitrahmen",
+      "budget": "Budgetrahmen",
+      "pains": "Ausgangslage",
+      "entry": "Einstieg"
+    },
+    "regarding": "Anfrage zu",
+    "pains": {
+      "duplicate": {
+        "title": "Daten werden mehrfach von Hand gepflegt",
+        "hint": "Dieselbe Information landet in zwei oder drei Systemen."
+      },
+      "documents": {
+        "title": "Dokumente werden von Hand erfasst",
+        "hint": "Rechnungen, Lieferscheine oder Bestellungen werden abgetippt."
+      },
+      "overview": {
+        "title": "Es fehlt der Überblick",
+        "hint": "Zahlen und Stände liegen verteilt, jemand baut sie regelmäßig zusammen."
+      },
+      "fit": {
+        "title": "Die Software passt nicht zum Ablauf",
+        "hint": "Ihr Prozess wird um das Programm herum gebaut statt umgekehrt."
+      },
+      "unsure": {
+        "title": "Etwas anderes",
+        "hint": "Beschreiben Sie es im nächsten Schritt in eigenen Worten."
+      }
+    },
+    "details": {
+      "web": {
+        "label": "Web-App: Welche Systeme sollen angebunden werden?",
+        "options": {
+          "erp": "ERP / Warenwirtschaft",
+          "crm": "CRM / Buchhaltung",
+          "none": "Keine – die App steht für sich",
+          "unsure": "Weiß ich noch nicht"
+        }
+      },
+      "desktop": {
+        "label": "Desktop-Programm: Für welches System?",
+        "options": {
+          "windows": "Windows",
+          "macos": "macOS",
+          "both": "Beide"
+        }
+      },
+      "mobile": {
+        "label": "Mobile App: Für welche Plattform?",
+        "options": {
+          "ios": "iOS",
+          "android": "Android",
+          "both": "Beide"
+        }
+      },
+      "ai": {
+        "label": "KI-Automation: Dürfen die Daten das Haus verlassen?",
+        "options": {
+          "cloud": "Ja, Cloud ist in Ordnung",
+          "local": "Nein, muss im Haus bleiben",
+          "unsure": "Weiß ich noch nicht"
+        }
+      }
     }
   },
-  "footer": {
-    "description": "Consulsoft entwickelt maßgeschneiderte Softwarelösungen für Unternehmen. Qualität, Transparenz und Innovation stehen bei uns im Mittelpunkt.",
-    "links": "Links",
-    "legal": "Rechtliches",
-    "privacy": "Datenschutz",
-    "imprint": "Impressum",
-    "terms": "AGB",
-    "rights": "Alle Rechte vorbehalten."
+  "founders": {
+    "eyebrow": "Team",
+    "title": "Die beiden, mit denen Sie sprechen",
+    "subtitle": "Kein Vertrieb, keine Zwischenebene. Wir entwickeln selbst – und Sie erreichen uns direkt.",
+    "role": "Gründer & Entwickler",
+    "cta": "Mehr über uns",
+    "members": {
+      "naumche": {
+        "focus": "Frontend, Architektur und Projektleitung."
+      },
+      "dimitar": {
+        "focus": "Backend, DevOps und Datenbanken."
+      }
+    }
+  },
+  "servicePages": {
+    "cta": "Projekt anfragen",
+    "stackTitle": "Technologien",
+    "faqTitle": "Häufige Fragen",
+    "otherTitle": "Weitere Leistungen",
+    "web": {
+      "tag": "Web-Apps",
+      "h1": "Web-Apps entwickeln lassen",
+      "seoTitle": "Web-App entwickeln lassen – individuelle Webanwendungen",
+      "seoDescription": "Individuelle Web-Apps für Unternehmen: Kundenportale, Dashboards und Fachanwendungen im Browser, angebunden an Ihre bestehenden Systeme. Entwickelt in Naila, Bayern.",
+      "lede": "Portale, Dashboards und Fachanwendungen, die im Browser laufen – angebunden an die Systeme, die Sie ohnehin schon nutzen.",
+      "intro": {
+        "title": "Wann eine Web-App die richtige Antwort ist",
+        "body1": "Eine Web-App ist keine Website. Eine Website informiert, eine Web-App erledigt Arbeit: Sie meldet Nutzer an, kennt Rollen und Rechte, verarbeitet Eingaben und schreibt Ergebnisse zurück in Ihre Systeme. Sobald mehrere Personen mit denselben Daten arbeiten und jeder Beteiligte einen anderen Ausschnitt davon sehen darf, sind Sie im Gebiet der Web-Apps.",
+        "body2": "Der Vorteil gegenüber Desktop und Mobil: nichts muss installiert werden. Sie öffnen einen Link, und alle arbeiten auf demselben Stand – Kollegen im Haus genauso wie Kunden oder Lieferanten von außen. Wenn Ihre Anwendung dagegen ohne Netz laufen oder auf lokale Geräte zugreifen muss, ist eine Desktop-Anwendung die bessere Wahl."
+      },
+      "useCasesTitle": "Wofür Unternehmen Web-Apps bei uns bauen lassen",
+      "useCases": {
+        "uc1": {
+          "title": "Kunden- und Partnerportale",
+          "body": "Ihre Kunden sehen Aufträge, Dokumente und Status selbst, statt anzurufen. Das entlastet Ihre Innendienst-Telefone spürbar."
+        },
+        "uc2": {
+          "title": "Dashboards und Auswertungen",
+          "body": "Zahlen aus mehreren Systemen an einer Stelle, tagesaktuell – statt einer Excel-Datei, die jemand am Monatsende von Hand zusammenbaut."
+        },
+        "uc3": {
+          "title": "Auftrags- und Bestellsysteme",
+          "body": "Erfassung, Freigaben und Weitergabe in einem Ablauf, mit nachvollziehbarem Stand für jeden Vorgang."
+        },
+        "uc4": {
+          "title": "Fachanwendungen für Ihren Ablauf",
+          "body": "Wenn Standardsoftware Ihren Prozess nur zu achtzig Prozent abbildet und die restlichen zwanzig die teuren sind."
+        }
+      },
+      "approachTitle": "Wie wir Web-Apps bauen",
+      "approach": {
+        "ap1": {
+          "title": "An Bestehendes anbinden",
+          "body": "Ihr ERP, Ihre Warenwirtschaft, Ihre Buchhaltung bleiben, wo sie sind. Wir binden sie über Schnittstellen an, statt Daten doppelt zu pflegen."
+        },
+        "ap2": {
+          "title": "Rollen von Anfang an",
+          "body": "Wer darf was sehen, wer darf was ändern? Das klären wir vor der ersten Zeile, weil es sich später nur teuer nachrüsten lässt."
+        },
+        "ap3": {
+          "title": "Betrieb bei Ihnen",
+          "body": "Hosting in Deutschland oder in Ihrer eigenen Infrastruktur. Repository und Zugänge liegen bei Ihnen."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Was kostet eine Web-App?",
+          "a": "Das hängt vom Umfang ab. Ein überschaubares Portal liegt deutlich niedriger als eine Fachanwendung mit vielen Rollen und Schnittstellen. Sie bekommen nach dem ersten Gespräch ein Angebot mit festem Umfang und festem Preis, bevor wir anfangen."
+        },
+        "q2": {
+          "q": "Können Sie unser bestehendes ERP anbinden?",
+          "a": "In der Regel ja. Wenn das System eine Schnittstelle hat, nutzen wir sie. Wenn nicht, prüfen wir Datenbank- oder Dateiwege. Was möglich ist, sagen wir Ihnen nach einem Blick auf das System – nicht erst im Projekt."
+        },
+        "q3": {
+          "q": "Wie lange dauert die Entwicklung?",
+          "a": "Kleinere Anwendungen in Wochen, größere Plattformen in Monaten. Sie sehen früh lauffähige Zwischenstände, statt monatelang auf ein fertiges Ergebnis zu warten."
+        },
+        "q4": {
+          "q": "Wo laufen die Daten?",
+          "a": "Wo Sie es wollen: bei einem deutschen Hoster, in Ihrer eigenen Serverumgebung oder in Ihrer bestehenden Cloud. Wir richten uns nach Ihren Anforderungen an Datenschutz und Betrieb."
+        }
+      },
+      "production": {
+        "title": "Baukasten, Prototyp – oder Software, die tragen muss",
+        "body1": "Mit heutigen Baukästen und KI-Generatoren steht in einem Nachmittag etwas Vorzeigbares. Das ist ernst gemeint nützlich: Wenn Sie eine Idee intern durchspielen wollen, sind diese Werkzeuge schneller als jedes Angebot, das wir Ihnen schreiben könnten. Wir bauen selbst Prototypen so.",
+        "body2": "Der Unterschied zeigt sich später. Wenn fünfzig Leute gleichzeitig arbeiten, wenn Berechtigungen wirklich greifen müssen statt nur Menüpunkte auszublenden, wenn das Datenmodell nach zwei Jahren erweitert wird, ohne dass Bestehendes bricht – dann trägt der Prototyp nicht mehr. Was dann zählt, ist unspektakulär und genau unsere Arbeit.",
+        "points": {
+          "p1": {
+            "title": "Rechte auf dem Server",
+            "body": "Prüfung dort, wo sie nicht umgangen werden kann – nicht nur im Frontend versteckt."
+          },
+          "p2": {
+            "title": "Migrationen ohne Datenverlust",
+            "body": "Das Datenmodell wächst. Änderungen dürfen bestehende Datensätze nicht beschädigen."
+          },
+          "p3": {
+            "title": "Übergebbarer Quellcode",
+            "body": "Lesbar, getestet, dokumentiert – auch für ein Team, das nicht wir sind."
+          }
+        }
+      }
+    },
+    "desktop": {
+      "tag": "Desktop",
+      "h1": "Desktop-Software für macOS und Windows",
+      "seoTitle": "Desktop-Software entwickeln lassen für Windows und macOS",
+      "seoDescription": "Individuelle Desktop-Anwendungen für Windows und macOS: für Arbeitsplätze ohne verlässliches Netz, große Datenmengen und direkten Zugriff auf Geräte und Dateisystem.",
+      "lede": "Programme, die lokal laufen – für Arbeitsplätze ohne verlässliches Netz, für große Dateien und für direkten Zugriff auf Geräte und Dateisystem.",
+      "intro": {
+        "title": "Warum manche Software auf den Rechner gehört",
+        "body1": "Der Browser kann inzwischen viel, aber nicht alles. Er darf nicht ungefragt auf beliebige Ordner zugreifen, er spricht nur eingeschränkt mit angeschlossenen Geräten, und wenn das Netz in der Werkshalle wegbricht, steht die Arbeit. Für diese Fälle bauen wir Programme, die auf dem Rechner installiert werden und dort auch ohne Verbindung weiterlaufen.",
+        "body2": "Das ist keine Rückkehr in die Vergangenheit. Eine moderne Desktop-Anwendung synchronisiert sich, sobald wieder Netz da ist, bekommt Updates automatisch und teilt sich Logik und Datenmodell mit Ihrer Web- oder Mobil-Anwendung, wenn Sie mehrere Oberflächen brauchen."
+      },
+      "useCasesTitle": "Wofür Desktop-Anwendungen sinnvoll sind",
+      "useCases": {
+        "uc1": {
+          "title": "Arbeitsplätze ohne stabiles Netz",
+          "body": "Werkshalle, Lager, Baustelle. Die Anwendung läuft weiter und gleicht ab, sobald die Verbindung zurück ist."
+        },
+        "uc2": {
+          "title": "Große Dateien und lokale Verarbeitung",
+          "body": "Konstruktionsdaten, Bildstapel, Messreihen. Verarbeitung auf dem Rechner ist schneller als jeder Upload."
+        },
+        "uc3": {
+          "title": "Geräte und Schnittstellen",
+          "body": "Waagen, Scanner, Etikettendrucker, Maschinensteuerungen. Direkter Zugriff, ohne Umweg über den Browser."
+        },
+        "uc4": {
+          "title": "Arbeit mit dem Dateisystem",
+          "body": "Ordnerstrukturen überwachen, Dateien stapelweise umbenennen, Exporte automatisch ablegen."
+        }
+      },
+      "approachTitle": "Wie wir Desktop-Software bauen",
+      "approach": {
+        "ap1": {
+          "title": "Eine Codebasis, beide Systeme",
+          "body": "Windows und macOS aus demselben Quellcode. Das halbiert nicht nur die Entwicklung, sondern auch die spätere Pflege."
+        },
+        "ap2": {
+          "title": "Installation und Updates",
+          "body": "Signierte Installationspakete und automatische Updates, damit Ihre IT nicht bei jedem Release über die Rechner läuft."
+        },
+        "ap3": {
+          "title": "Offline gedacht",
+          "body": "Lokale Datenhaltung mit Abgleich, statt einer Anwendung, die ohne Verbindung nur eine Fehlermeldung zeigt."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Warum Desktop und nicht einfach eine Web-App?",
+          "a": "Wenn Ihre Anwendung ohne Netz laufen, auf lokale Geräte zugreifen oder große Dateien verarbeiten muss, ist Desktop die ehrlichere Antwort. Für alles andere empfehlen wir Ihnen selbst eine Web-App – die ist günstiger im Betrieb."
+        },
+        "q2": {
+          "q": "Läuft die Software auf Windows und macOS?",
+          "a": "Ja. Wir entwickeln aus einer gemeinsamen Codebasis für beide Systeme, sodass Funktionen und Aussehen auf beiden gleich sind und Änderungen nur einmal gemacht werden müssen."
+        },
+        "q3": {
+          "q": "Wie kommen Updates auf die Rechner?",
+          "a": "Über eine eingebaute Update-Funktion. Die Anwendung prüft selbst, ob eine neue Version vorliegt, und installiert sie – auf Wunsch erst nach Freigabe durch Ihre IT."
+        },
+        "q4": {
+          "q": "Kann die Software auch ohne Internet arbeiten?",
+          "a": "Ja. Daten werden lokal gehalten und abgeglichen, sobald wieder eine Verbindung besteht. Wie der Abgleich bei Konflikten entscheidet, legen wir gemeinsam fest."
+        }
+      },
+      "production": {
+        "title": "Das gewachsene Excel und seine Grenzen",
+        "body1": "In fast jedem Betrieb gibt es sie: die Tabelle mit Makros, die seit Jahren läuft und die genau eine Person versteht. Sie war die richtige Lösung, als sie entstand – jemand hat ein Problem gelöst, statt darauf zu warten, dass es jemand anderes tut. Das verdient Respekt, keine Belehrung.",
+        "body2": "Kritisch wird es, wenn der Betrieb davon abhängt und niemand mehr eingreifen kann: keine Zugriffskontrolle, keine Historie, kein Backup, das die Datei versteht, und ein Ausfallrisiko, das an einer einzelnen Person hängt. Genau an diesem Punkt lohnt sich der Umstieg auf ein richtiges Programm.",
+        "points": {
+          "p1": {
+            "title": "Mehrbenutzerbetrieb",
+            "body": "Gleichzeitiges Arbeiten ohne gesperrte Dateien und ohne „Kopie (3)\"."
+          },
+          "p2": {
+            "title": "Nachvollziehbarkeit",
+            "body": "Wer hat wann was geändert – nachweisbar, auch Jahre später."
+          },
+          "p3": {
+            "title": "Kein Personenrisiko",
+            "body": "Dokumentierter Code statt Wissen, das mit einem Menschen das Haus verlässt."
+          }
+        }
+      }
+    },
+    "mobile": {
+      "tag": "Mobile Apps",
+      "h1": "App entwickeln lassen für iOS und Android",
+      "seoTitle": "App entwickeln lassen – iOS und Android für Unternehmen",
+      "seoDescription": "Mobile Apps für Unternehmen: Außendienst, Lager, Zeiterfassung und Kundenapps für iOS und Android. Nativ oder plattformübergreifend, je nach Anforderung.",
+      "lede": "iOS und Android. Nativ, wenn es auf Leistung ankommt – plattformübergreifend, wenn das schneller zum Ziel führt.",
+      "intro": {
+        "title": "Wann sich eine eigene App lohnt",
+        "body1": "Eine App lohnt sich, wenn Menschen im Stehen arbeiten. Im Außendienst, im Lager, auf der Baustelle, beim Kunden vor Ort. Dort ist ein Telefon das einzige Gerät, das ohnehin dabei ist – und Funktionen wie Kamera, Standort, Barcode-Scanner und Offline-Betrieb sind genau das, was die Arbeit dort braucht.",
+        "body2": "Nicht jede Idee braucht eine App. Wenn Ihre Nutzer am Schreibtisch sitzen, ist eine Web-App fast immer günstiger und schneller verfügbar. Wir sagen Ihnen im ersten Gespräch, in welche Richtung wir bei Ihrem Vorhaben tendieren – auch wenn das gegen ein größeres Projekt spricht."
+      },
+      "useCasesTitle": "Wofür Unternehmen Apps einsetzen",
+      "useCases": {
+        "uc1": {
+          "title": "Außendienst und Service",
+          "body": "Einsätze, Checklisten und Rückmeldungen direkt vor Ort erfassen, statt abends Zettel abzutippen."
+        },
+        "uc2": {
+          "title": "Lager und Kommissionierung",
+          "body": "Barcodes mit der Telefonkamera scannen, Bestände sofort buchen, ohne separate Handscanner."
+        },
+        "uc3": {
+          "title": "Zeit- und Leistungserfassung",
+          "body": "Arbeitszeiten und Tätigkeiten dort erfassen, wo sie anfallen – mit Standort, wenn es nachweisbar sein muss."
+        },
+        "uc4": {
+          "title": "Kunden-Apps",
+          "body": "Bestellungen, Status und Dokumente für Ihre Kunden, wenn ein Portal im Browser nicht ausreicht."
+        }
+      },
+      "approachTitle": "Wie wir Apps bauen",
+      "approach": {
+        "ap1": {
+          "title": "Nativ oder plattformübergreifend",
+          "body": "Wir entscheiden nach Ihrer Anforderung, nicht nach Vorliebe. Für die meisten Fachanwendungen genügt eine gemeinsame Codebasis für beide Plattformen."
+        },
+        "ap2": {
+          "title": "Offline von Anfang an",
+          "body": "Im Lager und auf der Baustelle gibt es Funklöcher. Die App speichert lokal und synchronisiert später – sonst ist sie im Einsatz wertlos."
+        },
+        "ap3": {
+          "title": "Veröffentlichung im Store",
+          "body": "Wir übernehmen Einreichung und Freigabe bei Apple und Google, oder verteilen intern über Ihre Geräteverwaltung."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Nativ oder plattformübergreifend – was ist besser?",
+          "a": "Für Fachanwendungen im Unternehmen ist eine gemeinsame Codebasis meist die bessere Wahl: gleiche Funktionen, halbe Kosten, eine Pflege. Nativ wird interessant, wenn Sie stark auf Kamera, Grafik oder Hintergrundverarbeitung setzen."
+        },
+        "q2": {
+          "q": "Wer veröffentlicht die App im App Store?",
+          "a": "Das übernehmen wir – idealerweise unter Ihrem eigenen Entwicklerkonto, damit die App Ihnen gehört und Sie unabhängig von uns bleiben."
+        },
+        "q3": {
+          "q": "Funktioniert die App ohne Internet?",
+          "a": "Ja, wenn Ihr Einsatz das erfordert. Daten werden auf dem Gerät gehalten und beim nächsten Netz abgeglichen. Das planen wir von Anfang an ein statt nachträglich."
+        },
+        "q4": {
+          "q": "Brauchen wir wirklich eine App?",
+          "a": "Oft nicht. Wenn Ihre Nutzer überwiegend am Rechner arbeiten, empfehlen wir eine Web-App. Wir sagen Ihnen das im ersten Gespräch, auch wenn es das kleinere Projekt ist."
+        }
+      },
+      "production": {
+        "title": "App-Baukästen: gut für den Test, dünn im Betrieb",
+        "body1": "Mit einem App-Baukasten haben Sie in wenigen Tagen etwas auf dem Telefon. Für einen internen Test oder um einer Geschäftsführung eine Idee zu zeigen, ist das ein völlig vernünftiger Weg – und billiger, als uns damit zu beauftragen.",
+        "body2": "In den Betrieb kommen Sie damit selten. Was dort zählt, sind die unauffälligen Dinge: Die App muss im Funkloch weiterarbeiten und später sauber abgleichen. Sie muss durch die Freigabe bei Apple und Google kommen. Sie muss in zwei Jahren noch mit einer neuen iOS-Version laufen, und dafür braucht jemand Zugriff auf den Quellcode.",
+        "points": {
+          "p1": {
+            "title": "Offline und Abgleich",
+            "body": "Lokale Daten und definierte Regeln, wenn zwei Geräte denselben Datensatz ändern."
+          },
+          "p2": {
+            "title": "Store-Freigabe",
+            "body": "Richtlinien von Apple und Google sind der häufigste Grund, warum eine App nicht erscheint."
+          },
+          "p3": {
+            "title": "Ihr Entwicklerkonto",
+            "body": "Die App gehört Ihnen, nicht einer Plattform, die ihre Preise ändern kann."
+          }
+        }
+      }
+    },
+    "ai": {
+      "tag": "KI-Automation",
+      "h1": "KI-Automatisierung für Unternehmen",
+      "seoTitle": "KI-Automatisierung für Unternehmen – Prozesse automatisieren",
+      "seoDescription": "KI-Automatisierung für den Mittelstand: Dokumente auslesen, Daten zwischen Systemen übertragen, Anfragen vorsortieren. Auf Wunsch mit lokalen Modellen, DSGVO-konform.",
+      "lede": "Vorgänge, die heute jemand von Hand erledigt: Dokumente auslesen, Daten übertragen, Anfragen vorsortieren. Auf Wunsch mit Modellen, die Ihr Haus nicht verlassen.",
+      "intro": {
+        "title": "Automatisierung an einem konkreten Vorgang, nicht als Projekt",
+        "body1": "Die meisten KI-Vorhaben scheitern nicht an der Technik, sondern daran, dass niemand benennen kann, welche Arbeit genau wegfallen soll. Wir fangen deshalb am anderen Ende an: Sie zeigen uns einen Vorgang, den heute ein Mensch wiederholt von Hand erledigt, und wir rechnen aus, wie viel Zeit darin steckt.",
+        "body2": "Erst dann bauen wir. Meist ist das kein großes System, sondern eine kleine, unauffällige Automatisierung, die an einer Stelle in Ihrem Ablauf sitzt und dort täglich Stunden spart. Was sich nicht rechnet, sagen wir Ihnen – dafür ist der Aufwand vorher da."
+      },
+      "useCasesTitle": "Was sich in der Praxis automatisieren lässt",
+      "useCases": {
+        "uc1": {
+          "title": "Dokumente auslesen",
+          "body": "Rechnungen, Lieferscheine und Bestellungen kommen als PDF oder Scan und landen strukturiert im System – statt abgetippt zu werden."
+        },
+        "uc2": {
+          "title": "Daten zwischen Systemen übertragen",
+          "body": "Wenn dieselbe Information heute an drei Stellen von Hand eingetragen wird, ist das die günstigste Automatisierung, die es gibt."
+        },
+        "uc3": {
+          "title": "Anfragen vorsortieren",
+          "body": "Eingehende E-Mails nach Thema, Dringlichkeit und Zuständigkeit einordnen und mit einem Entwurf zur Freigabe vorlegen."
+        },
+        "uc4": {
+          "title": "Texte und Berichte erzeugen",
+          "body": "Wiederkehrende Zusammenfassungen, Protokolle und Statusberichte aus vorhandenen Daten, zur Kontrolle durch einen Menschen."
+        }
+      },
+      "approachTitle": "Wie wir Automatisierungen umsetzen",
+      "approach": {
+        "ap1": {
+          "title": "Vorgang und Zeit messen",
+          "body": "Wir sehen uns den Ablauf an und schätzen, wie viele Stunden im Monat darin stecken. Diese Zahl entscheidet, ob wir überhaupt anfangen."
+        },
+        "ap2": {
+          "title": "Mensch behält die Freigabe",
+          "body": "Automatisierungen bereiten vor, entscheiden aber nicht allein. Wo es auf Richtigkeit ankommt, bleibt eine Freigabe durch Ihre Mitarbeiter dazwischen."
+        },
+        "ap3": {
+          "title": "Modelle im Haus, wenn nötig",
+          "body": "Wenn Ihre Daten das Unternehmen nicht verlassen dürfen, setzen wir Modelle ein, die auf Ihrer eigenen Hardware laufen."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Verlassen unsere Daten das Unternehmen?",
+          "a": "Nur wenn Sie das wollen. Wir können Modelle lokal auf Ihrer eigenen Hardware betreiben, sodass keine Inhalte an externe Anbieter gehen. Das ist etwas aufwendiger, aber für sensible Unterlagen oft die einzig sinnvolle Lösung."
+        },
+        "q2": {
+          "q": "Welche Aufgaben eignen sich überhaupt?",
+          "a": "Alles, was häufig vorkommt, klaren Regeln folgt und heute Zeit kostet: Dokumente erfassen, Daten übertragen, sortieren, zusammenfassen. Einzelfälle mit vielen Ausnahmen lohnen sich selten."
+        },
+        "q3": {
+          "q": "Wie messen Sie, ob sich das gerechnet hat?",
+          "a": "Wir halten vor dem Start fest, wie lange der Vorgang von Hand dauert und wie oft er anfällt. Nach dem Livegang vergleichen wir das mit dem tatsächlichen Aufwand. Ohne diese Zahl ist jede Aussage über Nutzen geraten."
+        },
+        "q4": {
+          "q": "Brauchen wir dafür große Datenmengen?",
+          "a": "Für die meisten Anwendungen nein. Moderne Modelle bringen Sprach- und Dokumentverständnis mit; wir ergänzen lediglich Ihr Fachwissen und Ihre Regeln. Eigene Trainingsdaten sind nur in Sonderfällen nötig."
+        }
+      },
+      "production": {
+        "title": "ChatGPT im Browser ist noch keine Automatisierung",
+        "body1": "Viele Mitarbeiter helfen sich längst selbst: Dokument öffnen, Inhalt kopieren, in ein KI-Werkzeug einfügen, Antwort zurückkopieren. Das ist findig und spart im Einzelfall Zeit. Wir würden es niemandem ausreden, solange es um einen Vorgang pro Woche geht.",
+        "body2": "Bei zweihundert Belegen im Monat kippt die Rechnung. Das Kopieren ist die Arbeit, nicht das Denken – und es passiert außerhalb Ihrer Systeme, ohne Protokoll, mit Unternehmensdaten in einem fremden Browserfenster. Automatisierung heißt, dass der Vorgang ohne Mensch dazwischen läuft und der Mensch nur noch freigibt.",
+        "points": {
+          "p1": {
+            "title": "Angebunden statt kopiert",
+            "body": "Direkt an Postfach, Ordner und Zielsystem – ohne Zwischenschritt über die Zwischenablage."
+          },
+          "p2": {
+            "title": "Nachvollziehbar",
+            "body": "Jeder Vorgang protokolliert: was kam herein, was wurde erkannt, wer hat freigegeben."
+          },
+          "p3": {
+            "title": "Datenschutz geklärt",
+            "body": "Auf Wunsch lokale Modelle, damit keine Unterlagen an fremde Anbieter gehen."
+          }
+        }
+      }
+    },
+    "productionEyebrow": "Selbst bauen?"
+  },
+  "dock": {
+    "cta": "Gespräch buchen",
+    "email": "E-Mail schreiben"
   }
 }

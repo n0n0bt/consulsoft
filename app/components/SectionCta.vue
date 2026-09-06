@@ -1,70 +1,40 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
-
-const ctaRef = ref<HTMLElement | null>(null)
-const markX = ref(0)
-const markY = ref(0)
-const isHovering = ref(false)
-
-function onMouseMove(e: MouseEvent) {
-  if (!ctaRef.value) return
-  const rect = ctaRef.value.getBoundingClientRect()
-  markX.value = e.clientX - rect.left - 150
-  markY.value = e.clientY - rect.top - 150
-  isHovering.value = true
-}
-
-function onMouseLeave() {
-  isHovering.value = false
-}
 </script>
 
 <template>
-  <section id="contact" class="section-padding bg-white">
-    <div class="max-w-7xl mx-auto">
-      <div
-        ref="ctaRef"
-        class="fade-up bg-dark-900 rounded-4xl p-12 md:p-20 text-center relative overflow-hidden cursor-default"
-        @mousemove="onMouseMove"
-        @mouseleave="onMouseLeave"
-      >
-        <div class="absolute top-[-30%] right-[-10%] w-[500px] h-[500px] bg-gold-500/[0.06] rounded-full blur-[100px]" />
-        <div class="absolute bottom-[-20%] left-[-5%] w-[300px] h-[300px] bg-gold-400/[0.04] rounded-full blur-[80px]" />
-        <!-- Brand mark - follows cursor -->
-        <img
-          src="/brand-mark.svg"
-          alt=""
-          class="absolute w-[300px] h-[300px] pointer-events-none select-none brightness-0 invert transition-opacity duration-500"
-          :class="isHovering ? 'opacity-40' : 'opacity-0'"
-          :style="{ top: `${markY}px`, left: `${markX}px`, transition: 'top 0.4s cubic-bezier(0.16, 1, 0.3, 1), left 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease' }"
-        />
-
-        <div class="relative">
-          <span class="inline-flex items-center gap-2 text-[12px] font-semibold tracking-widest text-gold-400 mb-6">
-            {{ t('cta.tag') }}
-          </span>
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-            {{ t('cta.title') }}
-          </h2>
-          <p class="text-dark-300 text-lg mb-10 max-w-lg mx-auto font-light leading-relaxed">
-            {{ t('cta.subtitle') }}
+  <section data-dock-stop="true" class="shell pb-16 pt-8 sm:pb-20">
+    <div class="grid gap-4 lg:grid-cols-2">
+      <!-- Brass card: the lower-commitment door -->
+      <div class="reveal flex flex-col justify-between rounded-panel bg-brass-600 p-8 text-white sm:p-10">
+        <div>
+          <h2 class="text-display-md font-semibold text-balance">{{ t('cta.explore.title') }}</h2>
+          <p class="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-pretty text-white/85">
+            {{ t('cta.explore.body') }}
           </p>
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <NuxtLink
-              :to="localePath('/kontakt')"
-              class="group inline-flex items-center gap-2.5 bg-white text-dark-900 font-semibold text-[15px] px-8 py-4 rounded-full hover:bg-gold-50 transition-all hover:shadow-xl active:scale-[0.97]"
-            >
-              {{ t('cta.button') }}
-              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </NuxtLink>
-            <span class="text-dark-400 text-[14px]">
-              {{ t('cta.email') }}
-            </span>
-          </div>
         </div>
+        <NuxtLink
+          :to="{ path: localePath('/anfrage'), query: { intent: 'explore' } }"
+          class="mt-10 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-3 text-[0.9375rem] font-medium text-brass-700 transition duration-200 hover:bg-brass-50 active:scale-[0.98]"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 2v3M16 2v3M3.5 9h17M4 6h16a1 1 0 011 1v13a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          {{ t('cta.explore.button') }}
+        </NuxtLink>
+      </div>
+
+      <!-- White card: the ready-to-go door -->
+      <div class="reveal flex flex-col justify-between rounded-panel border border-chrome-200 bg-white p-8 sm:p-10">
+        <div>
+          <h2 class="text-display-md font-semibold text-balance text-ink">{{ t('cta.ready.title') }}</h2>
+          <p class="mt-4 max-w-prose text-[1.0625rem] leading-relaxed text-pretty text-slate-500">
+            {{ t('cta.ready.body') }}
+          </p>
+        </div>
+        <NuxtLink :to="{ path: localePath('/anfrage'), query: { intent: 'ready' } }" class="btn-ink mt-10 w-fit">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 015.5 4h2.2a1 1 0 01.96.72l.9 3a1 1 0 01-.3 1.05L7.9 10a12 12 0 006.1 6.1l1.23-1.36a1 1 0 011.05-.3l3 .9a1 1 0 01.72.96v2.2a1.5 1.5 0 01-1.5 1.5A15.5 15.5 0 014 5.5z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          {{ t('cta.ready.button') }}
+        </NuxtLink>
       </div>
     </div>
   </section>

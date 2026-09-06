@@ -1,16 +1,11 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 useScrollReveal()
 
-useHead({
-  title: 'Consulsoft – Moderne Softwareentwicklung für Unternehmen',
-  titleTemplate: '',
-})
-
 useSeoMeta({
-  description: 'Consulsoft entwickelt maßgeschneiderte Softwarelösungen für Unternehmen. Web-Apps, Mobile Apps, Cloud & DevOps, KI-Integration. Ihr Partner für digitale Innovation.',
-  ogTitle: 'Consulsoft – Moderne Softwareentwicklung für Unternehmen',
-  ogDescription: 'Maßgeschneiderte Softwarelösungen: Web-Apps, Mobile Apps, Cloud & DevOps, KI-Integration.',
-  ogUrl: 'https://consulsoft.de',
+  title: () => t('seo.home.title'),
+  description: () => t('seo.home.description'),
 })
 
 useHead({
@@ -22,25 +17,25 @@ useHead({
         '@type': 'Organization',
         'name': 'Consulsoft UG (haftungsbeschränkt)',
         'url': 'https://consulsoft.de',
-        'logo': 'https://consulsoft.de/brand-mark.svg',
-        'description': 'Moderne Softwareentwicklung für Unternehmen – Web-Apps, Mobile Apps, Cloud & DevOps, KI-Integration.',
+        'logo': 'https://consulsoft.de/apple-touch-icon.png',
+        'description': 'Individuelle Softwareentwicklung: Web-Apps, Desktop-Anwendungen für macOS und Windows, mobile Apps und KI-Automationen.',
         'foundingDate': '2024',
         'founders': [
           { '@type': 'Person', 'name': 'Naumche Joshevski' },
           { '@type': 'Person', 'name': 'Dimitar Manev' },
         ],
-        'sameAs': [
-          'https://github.com/n0n0bt/consulsoft',
-        ],
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'Nailaer Str. 39',
+          'postalCode': '95119',
+          'addressLocality': 'Naila',
+          'addressCountry': 'DE',
+        },
         'contactPoint': {
           '@type': 'ContactPoint',
           'email': 'info@consulsoft.de',
           'contactType': 'customer service',
           'availableLanguage': ['German', 'English'],
-        },
-        'address': {
-          '@type': 'PostalAddress',
-          'addressCountry': 'DE',
         },
       }),
     },
@@ -51,13 +46,13 @@ useHead({
 <template>
   <div>
     <SectionHero />
-    <SectionPartners />
+    <SectionStack />
     <SectionServices />
-    <SectionTech />
-    <SectionAbout />
-    <SectionProjects />
+    <SectionCompare />
+    <SectionFounders />
+    <SectionWork />
     <SectionProcess />
-    <SectionTestimonial />
+    <SectionFaq />
     <SectionCta />
   </div>
 </template>

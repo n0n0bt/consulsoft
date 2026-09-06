@@ -1,63 +1,171 @@
 <script setup lang="ts">
-const { t } = useI18n()
+import type { Surface } from './SurfaceFrame.vue'
 
-const services = [
-  { key: 'web', icon: 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9' },
-  { key: 'mobile', icon: 'M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z' },
-  { key: 'cloud', icon: 'M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z' },
-  { key: 'consulting', icon: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z' },
-  { key: 'api', icon: 'M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
-  { key: 'ai', icon: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' },
+const { t } = useI18n()
+const localePath = useLocalePath()
+
+/**
+ * Four services, four surfaces. The demo sits here rather than in the hero
+ * because this is where it argues for something: the tabs and the cards below
+ * are the same four things, so the picture and the copy explain each other.
+ *
+ * The tabs carry platform marks rather than words; the label still ships as the
+ * accessible name, since an Apple silhouette alone tells a screen reader nothing.
+ */
+const surfaces: { id: Surface, label: string, fill: boolean, d: string[] }[] = [
+  {
+    id: 'web', label: 'Web', fill: false,
+    d: [
+      'M12 21a9 9 0 100-18 9 9 0 000 18z',
+      'M3.6 9h16.8M3.6 15h16.8',
+      'M12 3a13.5 13.5 0 013.6 9 13.5 13.5 0 01-3.6 9 13.5 13.5 0 01-3.6-9A13.5 13.5 0 0112 3z',
+    ],
+  },
+  {
+    id: 'macos', label: 'macOS', fill: true,
+    d: [
+      'M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09z',
+      'M15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701',
+    ],
+  },
+  {
+    id: 'windows', label: 'Windows', fill: true,
+    d: ['M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801'],
+  },
+  {
+    id: 'mobile', label: 'Mobil', fill: false,
+    d: ['M7.5 2.5h9a2 2 0 012 2v15a2 2 0 01-2 2h-9a2 2 0 01-2-2v-15a2 2 0 012-2z', 'M10.5 18.5h3'],
+  },
 ]
+
+// The four cards, in the order the services are sold rather than demoed.
+const services = [
+  { key: 'web', slug: 'web-apps', tag: 'WEB', stack: ['vue', 'react', 'go', 'net-core', 'node'] },
+  { key: 'desktop', slug: 'desktop-anwendungen', tag: 'DESKTOP', stack: ['swift', 'csharp', 'net-core', 'kotlin', 'electron'] },
+  { key: 'mobile', slug: 'mobile-apps', tag: 'MOBIL', stack: ['swift', 'kotlin', 'react'] },
+  { key: 'ai', slug: 'ki-automatisierung', tag: 'KI', stack: ['python', 'go', 'net-core'] },
+] as const
+
+const active = ref<Surface>('web')
+const tabs = ref<HTMLButtonElement[]>([])
+
+/**
+ * The frame cycles on its own so the idea lands without a click, and stops the
+ * moment someone takes over — an animation that keeps overriding the visitor's
+ * choice is just noise.
+ */
+let timer: ReturnType<typeof setInterval> | undefined
+
+function select(id: Surface, byUser = true) {
+  active.value = id
+  if (byUser) clearInterval(timer)
+}
+
+function onKey(e: KeyboardEvent, i: number) {
+  const dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0
+  if (!dir) return
+  e.preventDefault()
+  const next = (i + dir + surfaces.length) % surfaces.length
+  select(surfaces[next]!.id)
+  tabs.value[next]?.focus()
+}
+
+onMounted(() => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  timer = setInterval(() => {
+    const i = surfaces.findIndex(s => s.id === active.value)
+    select(surfaces[(i + 1) % surfaces.length]!.id, false)
+  }, 3800)
+})
+
+onBeforeUnmount(() => clearInterval(timer))
 </script>
 
 <template>
-  <section id="services" class="section-padding bg-surface-50">
-    <div class="max-w-7xl mx-auto">
-      <div class="max-w-2xl mb-16">
-        <span class="fade-up inline-flex items-center gap-2 text-[12px] font-semibold tracking-widest text-gold-700 mb-5">
-          <span class="w-8 h-px bg-gold-400" />
-          {{ t('services.tag') }}
-        </span>
-        <h2 class="fade-up text-4xl md:text-5xl font-extrabold text-dark-900 tracking-tight mb-4">
-          {{ t('services.title') }}
-        </h2>
-        <p class="fade-up text-lg text-dark-400 font-light leading-relaxed">
-          {{ t('services.subtitle') }}
-        </p>
-      </div>
+  <section id="leistungen" class="shell scroll-mt-24 py-24 sm:py-32">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="eyebrow reveal">{{ t('services.eyebrow') }}</p>
+      <h2 class="reveal mt-4 text-display-lg font-semibold text-balance text-ink">{{ t('services.title') }}</h2>
+      <p class="reveal mx-auto mt-5 max-w-prose text-[1.0625rem] leading-relaxed text-pretty text-slate-500">
+        {{ t('services.subtitle') }}
+      </p>
+    </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div
-          v-for="(service, i) in services"
-          :key="service.key"
-          class="fade-up service-card group relative overflow-hidden rounded-3xl p-8 cursor-default"
-          :style="{ transitionDelay: `${i * 0.06}s` }"
+    <!-- The four surfaces, shown -->
+    <div class="mt-14">
+      <SurfaceFrame :surface="active" />
+
+      <div
+        role="tablist"
+        :aria-label="t('services.surfaceLabel')"
+        class="mx-auto mt-7 flex w-fit max-w-full items-center gap-1 overflow-x-auto rounded-full border border-chrome-300/70 bg-white p-1 shadow-card"
+      >
+        <button
+          v-for="(s, i) in surfaces"
+          :key="s.id"
+          ref="tabs"
+          role="tab"
+          type="button"
+          :aria-selected="active === s.id"
+          :aria-label="s.label"
+          :title="s.label"
+          :tabindex="active === s.id ? 0 : -1"
+          class="grid size-11 shrink-0 place-items-center rounded-full transition duration-200 sm:size-12"
+          :class="active === s.id ? 'bg-brass-500 text-white' : 'text-slate-400 hover:bg-paper hover:text-ink'"
+          @click="select(s.id)"
+          @keydown="onKey($event, i)"
         >
-          <!-- Background that morphs on hover -->
-          <div class="absolute inset-0 bg-white transition-all duration-700 ease-out group-hover:bg-dark-900 group-hover:scale-[1.01]" />
-
-          <!-- Subtle radial glow on hover -->
-          <div class="absolute -top-20 -right-20 w-48 h-48 rounded-full bg-gold-400/0 group-hover:bg-gold-400/10 transition-all duration-700 blur-3xl" />
-
-          <div class="relative z-10">
-            <div
-              class="inline-flex items-center justify-center mb-6 rounded-2xl bg-surface-100 group-hover:bg-white/10 transition-all duration-500"
-              style="width: 48px; height: 48px;"
-            >
-              <svg class="text-dark-400 group-hover:text-gold-400 transition-colors duration-500" style="width: 22px; height: 22px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" :d="service.icon" />
-              </svg>
-            </div>
-            <h3 class="text-lg font-bold text-dark-900 group-hover:text-white mb-2 tracking-tight transition-colors duration-500">
-              {{ t(`services.items.${service.key}.title`) }}
-            </h3>
-            <p class="text-[15px] text-dark-400 group-hover:text-dark-300 leading-relaxed font-light transition-colors duration-500">
-              {{ t(`services.items.${service.key}.description`) }}
-            </p>
-          </div>
-        </div>
+          <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              v-for="(d, n) in s.d"
+              :key="n"
+              :d="d"
+              :fill="s.fill ? 'currentColor' : 'none'"
+              :stroke="s.fill ? 'none' : 'currentColor'"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
+    </div>
+
+    <!-- The four surfaces, explained -->
+    <div class="mt-16 grid gap-px overflow-hidden rounded-panel border border-chrome-200 bg-chrome-200 sm:grid-cols-2">
+      <NuxtLink
+        v-for="(s, i) in services"
+        :key="s.key"
+        :to="localePath(`/leistungen/${s.slug}`)"
+        class="reveal group block bg-white p-7 transition-colors duration-300 hover:bg-paper sm:p-9"
+        :style="{ transitionDelay: `${i * 60}ms` }"
+      >
+        <p class="font-mono text-label uppercase text-brass-600">{{ s.tag }}</p>
+        <h3 class="mt-5 text-display-sm font-semibold text-ink">{{ t(`services.items.${s.key}.title`) }}</h3>
+        <p class="mt-3 max-w-prose text-[0.9375rem] leading-relaxed text-pretty text-slate-500">
+          {{ t(`services.items.${s.key}.description`) }}
+        </p>
+        <div class="mt-6 flex items-end justify-between gap-4 border-t border-chrome-200 pt-5">
+          <ul class="flex flex-wrap items-center gap-2.5">
+            <li v-for="tech in s.stack" :key="tech">
+              <img
+                :src="techSrc(tech)"
+                :alt="TECH[tech]"
+                :title="TECH[tech]"
+                width="192"
+                height="192"
+                loading="lazy"
+                decoding="async"
+                class="size-7 object-contain"
+              />
+            </li>
+          </ul>
+          <span class="flex shrink-0 items-center gap-1.5 text-[0.875rem] font-medium text-ink">
+            {{ t('services.more') }}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" class="transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </span>
+        </div>
+      </NuxtLink>
     </div>
   </section>
 </template>
