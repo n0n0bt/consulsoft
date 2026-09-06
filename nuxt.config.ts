@@ -1,3 +1,7 @@
+// Filenames under public/ are stable and hand-managed, so cache for 30 days
+// rather than a year — shipping a corrected asset does not require a rename.
+const IMAGE_CACHE = 'public, max-age=2592000, stale-while-revalidate=86400'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -5,7 +9,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
-    '@nuxtjs/google-fonts',
+    '@nuxt/fonts',
     '@vueuse/nuxt',
     '@nuxtjs/sitemap',
   ],
@@ -21,11 +25,45 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
   },
 
-  googleFonts: {
-    families: {
-      'Plus Jakarta Sans': [300, 400, 500, 600, 700, 800],
+  // Self-hosted, so no third-party DNS + TLS on the critical path. Replaces
+  // @nuxtjs/google-fonts, which emitted no @font-face at all in production and,
+  // with download enabled, pointed every weight at the 300 file.
+  // Archivo carries the display voice (a DIN-adjacent grotesk, set tight and
+  // heavy); IBM Plex Sans reads the body; IBM Plex Mono labels the OS chrome,
+  // the stack and the process steps, where a technical register is the point.
+  fonts: {
+    families: [
+      { name: 'Archivo', provider: 'google', weights: [500, 600, 700], styles: ['normal'], subsets: ['latin', 'latin-ext'] },
+      { name: 'IBM Plex Sans', provider: 'google', weights: [400, 500, 600], styles: ['normal'], subsets: ['latin', 'latin-ext'] },
+      { name: 'IBM Plex Mono', provider: 'google', weights: [400, 500], styles: ['normal'], subsets: ['latin'] },
+    ],
+    defaults: { fallbacks: { 'sans-serif': ['system-ui', 'Arial'] } },
+  },
+
+  // Pages are static content, so build them to HTML and serve from the CDN edge
+  // instead of invoking a serverless function on every request. /api/contact
+  // stays a function (see routeRules below).
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+      routes: [
+        '/', '/en', '/danke', '/en/danke', '/anfrage', '/en/anfrage',
+        '/leistungen/web-apps', '/leistungen/desktop-anwendungen',
+        '/leistungen/mobile-apps', '/leistungen/ki-automatisierung',
+        '/en/leistungen/web-apps', '/en/leistungen/desktop-anwendungen',
+        '/en/leistungen/mobile-apps', '/en/leistungen/ki-automatisierung',
+      ],
     },
-    display: 'swap',
+  },
+
+  routeRules: {
+    '/api/**': { prerender: false },
+    '/languages/**': { headers: { 'cache-control': IMAGE_CACHE } },
+    '/partners/**': { headers: { 'cache-control': IMAGE_CACHE } },
+    '/project-immoreels/**': { headers: { 'cache-control': IMAGE_CACHE } },
+    '/project-pannenhilfe/**': { headers: { 'cache-control': IMAGE_CACHE } },
+    '/team/**': { headers: { 'cache-control': IMAGE_CACHE } },
   },
 
   css: ['~/assets/css/main.css'],
@@ -67,8 +105,8 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#1C1C22' },
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/brand-mark.svg' },
-        { rel: 'apple-touch-icon', href: '/brand-mark.svg' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
         { rel: 'canonical', href: 'https://consulsoft.de' },
       ],
     },

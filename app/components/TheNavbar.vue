@@ -1,157 +1,162 @@
 <script setup lang="ts">
-const { locale, locales, setLocale, t } = useI18n()
-const scrolled = ref(false)
-const mobileOpen = ref(false)
-
-const otherLocale = computed(() =>
-  locales.value.find((l) => (typeof l === 'string' ? l : l.code) !== locale.value)
-)
-
-function getCode(l: string | { code: string }) {
-  return typeof l === 'string' ? l : l.code
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', () => {
-    scrolled.value = window.scrollY > 20
-  })
-})
-
+const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
 
-const navLinks = computed(() => [
-  { label: t('nav.services'), href: '#services' },
-  { label: t('nav.about'), href: '#about' },
-  { label: t('nav.projects'), href: '#projects' },
-  { label: t('nav.process'), href: '#process' },
-  { label: t('nav.team'), to: localePath('/about') },
-  { label: t('nav.contact'), to: localePath('/kontakt') },
+const links = computed(() => [
+  { label: t('nav.services'), to: `${localePath('/')}#leistungen` },
+  { label: t('nav.work'), to: `${localePath('/')}#arbeiten` },
+  { label: t('nav.process'), to: `${localePath('/')}#prozess` },
+  { label: t('nav.team'), to: localePath('/team') },
 ])
+
+const other = computed(() => (locales.value as { code: string, name: string }[]).find(l => l.code !== locale.value))
+
+const open = ref(false)
+
+/**
+ * At rest the bar is wide and hangs from the top edge of the hero, square on
+ * top and rounded below. Once the hero is behind you it detaches: narrower,
+ * fully rounded, lifted off the edge. Same object, two states.
+ */
+const scrolled = ref(false)
+const onScroll = () => { scrolled.value = window.scrollY > 40 }
+onMounted(() => { onScroll(); window.addEventListener('scroll', onScroll, { passive: true }) })
+onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
+
+watch(() => route.fullPath, () => { open.value = false })
+watch(open, v => { document.body.style.overflow = v ? 'hidden' : '' })
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
-    <nav
-      :class="[
-        'max-w-5xl mx-auto rounded-full px-3 py-2 transition-all duration-500 flex items-center justify-between',
-        scrolled
-          ? 'bg-white/80 backdrop-blur-2xl shadow-lg shadow-black/[0.03] border border-dark-100/60'
-          : 'bg-white/40 backdrop-blur-md border border-transparent',
-      ]"
-    >
-      <!-- Logo -->
-      <NuxtLink :to="localePath('/')" class="flex items-center pl-3">
-        <img src="/consulsoft-logo.svg" alt="Consulsoft" class="h-7" />
-      </NuxtLink>
-
-      <!-- Center links -->
-      <div class="hidden md:flex items-center gap-1">
-        <template v-for="link in navLinks" :key="link.label">
-          <NuxtLink
-            v-if="link.to"
-            :to="link.to"
-            class="text-[13px] font-medium text-dark-500 hover:text-dark-900 transition-colors px-4 py-2 rounded-full hover:bg-dark-50"
-          >
-            {{ link.label }}
-          </NuxtLink>
-          <a
-            v-else
-            :href="link.href"
-            class="text-[13px] font-medium text-dark-500 hover:text-dark-900 transition-colors px-4 py-2 rounded-full hover:bg-dark-50"
-          >
-            {{ link.label }}
-          </a>
-        </template>
-      </div>
-
-      <!-- Right -->
-      <div class="hidden md:flex items-center gap-2">
-        <button
-          v-if="otherLocale"
-          class="text-[13px] font-medium text-dark-400 hover:text-dark-900 transition-colors px-3 py-2 rounded-full hover:bg-dark-50"
-          @click="setLocale(getCode(otherLocale))"
-        >
-          {{ getCode(otherLocale).toUpperCase() }}
-        </button>
-        <NuxtLink
-          :to="localePath('/kontakt')"
-          class="bg-dark-900 text-white text-[13px] font-semibold px-5 py-2.5 rounded-full hover:bg-dark-800 transition-all hover:shadow-lg hover:shadow-dark-900/20 active:scale-[0.97]"
-        >
-          {{ t('hero.cta') }}
+  <header
+    class="fixed inset-x-0 top-0 z-50 px-3 transition-[padding] duration-300 ease-out sm:px-4 lg:px-3"
+    :class="scrolled ? 'pt-3 sm:pt-4' : 'pt-4 sm:pt-5 lg:pt-3'"
+  >
+    <!--
+      The bar hugs its own content and is pinned flush to the top edge, matching
+      the hero card inset, so it reads as attached rather than floating.
+    -->
+    <div class="mx-auto flex max-w-shell justify-center">
+      <!--
+        Square on top, rounded on the bottom: the bar hangs from the top edge of
+        the hero card rather than floating below it, so the two read as one
+        piece of geometry.
+      -->
+      <nav
+        class="flex w-full items-center border border-chrome-200
+               px-3 transition-all duration-[450ms] ease-out lg:px-2.5"
+        :class="[
+          scrolled
+            ? 'h-[3.25rem] max-w-4xl bg-white shadow-pill'
+            : 'h-14 max-w-5xl bg-paper shadow-pill lg:border-t-transparent lg:shadow-[0_10px_30px_-18px_rgba(18,20,26,0.25)]',
+          scrolled
+            ? 'rounded-[1.75rem]'
+            : 'rounded-[1.75rem] lg:rounded-t-none lg:rounded-b-[1.75rem]',
+        ]"
+      >
+        <NuxtLink :to="localePath('/')" class="flex flex-1 items-center py-2.5 pl-1 pr-2" aria-label="Consulsoft">
+          <img
+            src="/consulsoft-logo.webp"
+            alt="Consulsoft"
+            width="1400"
+            height="413"
+            fetchpriority="high"
+            class="h-[1.55rem] w-auto"
+          />
         </NuxtLink>
-      </div>
 
-      <!-- Mobile toggle -->
-      <button
-        class="md:hidden p-2.5 text-dark-700 hover:bg-dark-50 rounded-full transition-colors"
-        @click="mobileOpen = !mobileOpen"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            v-if="!mobileOpen"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-          <path
-            v-else
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
-    </nav>
-
-    <!-- Mobile menu -->
-    <Transition
-      enter-active-class="transition duration-300 ease-out"
-      enter-from-class="opacity-0 scale-95 -translate-y-2"
-      enter-to-class="opacity-100 scale-100 translate-y-0"
-      leave-active-class="transition duration-200 ease-in"
-      leave-from-class="opacity-100 scale-100"
-      leave-to-class="opacity-0 scale-95"
-    >
-      <div
-        v-if="mobileOpen"
-        class="md:hidden mt-2 max-w-5xl mx-auto bg-white/90 backdrop-blur-2xl rounded-3xl border border-dark-100/60 shadow-xl shadow-black/[0.05] p-6"
-      >
-        <div class="flex flex-col gap-1">
-          <template v-for="link in navLinks" :key="link.label">
-            <NuxtLink
-              v-if="link.to"
-              :to="link.to"
-              class="text-[15px] font-medium text-dark-700 hover:text-dark-900 py-3 px-4 rounded-2xl hover:bg-dark-50 transition-colors"
-              @click="mobileOpen = false"
-            >
-              {{ link.label }}
-            </NuxtLink>
-            <a
-              v-else
-              :href="link.href"
-              class="text-[15px] font-medium text-dark-700 hover:text-dark-900 py-3 px-4 rounded-2xl hover:bg-dark-50 transition-colors"
-              @click="mobileOpen = false"
-            >
-              {{ link.label }}
-            </a>
-          </template>
-          <hr class="my-2 border-dark-100" />
-          <div class="flex items-center gap-3 px-4">
-            <button
-              v-if="otherLocale"
-              class="text-[13px] font-medium text-dark-400 hover:text-dark-900 py-2 px-3 rounded-full border border-dark-100 hover:bg-dark-50"
-              @click="setLocale(getCode(otherLocale)); mobileOpen = false"
-            >
-              {{ getCode(otherLocale).toUpperCase() }}
-            </button>
-            <NuxtLink
-              :to="localePath('/kontakt')"
-              class="flex-1 bg-dark-900 text-white text-[13px] font-semibold py-3 rounded-full text-center"
-              @click="mobileOpen = false"
-            >
-              {{ t('hero.cta') }}
-            </NuxtLink>
-          </div>
+        <!-- Centre column: empty on mobile, so the actions still sit right -->
+        <div class="hidden shrink-0 items-center lg:flex">
+          <NuxtLink
+            v-for="l in links"
+            :key="l.label"
+            :to="l.to"
+            class="whitespace-nowrap rounded-full px-3 py-2 text-[0.875rem] text-ink/75 transition hover:bg-paper hover:text-ink"
+          >
+            {{ l.label }}
+          </NuxtLink>
         </div>
+
+        <div class="flex flex-1 items-center justify-end gap-1.5 pl-4">
+          <!-- A flag reads faster than a language code -->
+          <button
+            v-if="other"
+            type="button"
+            class="grid size-11 shrink-0 place-items-center rounded-full transition hover:bg-paper lg:size-9"
+            :aria-label="`${other.name}`"
+            :title="other.name"
+            @click="setLocale(other.code as 'de' | 'en')"
+          >
+            <span class="block h-[15px] w-[21px] overflow-hidden rounded-[3px] ring-1 ring-ink/10">
+              <svg v-if="other.code === 'de'" viewBox="0 0 5 3" class="size-full" aria-hidden="true">
+                <rect width="5" height="3" fill="#FFCE00" />
+                <rect width="5" height="2" fill="#DD0000" />
+                <rect width="5" height="1" fill="#000000" />
+              </svg>
+              <svg v-else viewBox="0 0 60 30" class="size-full" aria-hidden="true">
+                <rect width="60" height="30" fill="#012169" />
+                <path d="M0 0l60 30m0-30L0 30" stroke="#FFFFFF" stroke-width="6" />
+                <path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="3" />
+                <path d="M30 0v30M0 15h60" stroke="#FFFFFF" stroke-width="10" />
+                <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6" />
+              </svg>
+            </span>
+          </button>
+
+          <NuxtLink
+            :to="localePath('/anfrage')"
+            class="hidden items-center gap-2 whitespace-nowrap rounded-full bg-ink px-4 py-2.5 text-[0.875rem]
+                   font-medium text-white transition duration-200 hover:bg-ink-700 active:scale-[0.98] sm:inline-flex"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 015.5 4h2.2a1 1 0 01.96.72l.9 3a1 1 0 01-.3 1.05L7.9 10a12 12 0 006.1 6.1l1.23-1.36a1 1 0 011.05-.3l3 .9a1 1 0 01.72.96v2.2a1.5 1.5 0 01-1.5 1.5A15.5 15.5 0 014 5.5z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            {{ t('nav.cta') }}
+          </NuxtLink>
+
+          <button
+            type="button"
+            class="grid size-11 place-items-center rounded-full text-ink transition hover:bg-paper lg:hidden"
+            :aria-expanded="open"
+            :aria-label="t('nav.menu')"
+            @click="open = !open"
+          >
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path :d="open ? 'M6 6l12 12M18 6L6 18' : 'M4 8h16M4 16h16'" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile sheet -->
+    <Transition name="sheet">
+      <div v-if="open" class="mx-auto mt-2 max-w-shell rounded-panel border border-chrome-300/70 bg-white p-3 shadow-pill lg:hidden">
+        <NuxtLink
+          v-for="l in links"
+          :key="l.label"
+          :to="l.to"
+          class="block rounded-card px-4 py-3.5 text-[1.0625rem] text-ink transition hover:bg-paper"
+        >
+          {{ l.label }}
+        </NuxtLink>
+        <NuxtLink :to="localePath('/anfrage')" class="btn-ink mt-2 w-full">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 015.5 4h2.2a1 1 0 01.96.72l.9 3a1 1 0 01-.3 1.05L7.9 10a12 12 0 006.1 6.1l1.23-1.36a1 1 0 011.05-.3l3 .9a1 1 0 01.72.96v2.2a1.5 1.5 0 01-1.5 1.5A15.5 15.5 0 014 5.5z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          {{ t('nav.cta') }}
+        </NuxtLink>
       </div>
     </Transition>
   </header>
 </template>
+
+<style scoped>
+.sheet-enter-active,
+.sheet-leave-active {
+  transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sheet-enter-from,
+.sheet-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+</style>

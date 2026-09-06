@@ -10,31 +10,186 @@
   }
 
   body {
-    @apply bg-white text-dark-900 font-sans;
+    @apply bg-paper text-ink font-sans antialiased;
+    font-feature-settings: 'ss01', 'cv05';
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
   }
 
   ::selection {
-    @apply bg-gold-200 text-dark-900;
+    @apply bg-brass-200 text-ink;
+  }
+
+  /* Brass is the focus colour everywhere, so keyboard users get the same
+     accent the design already uses for "this one is active". */
+  :focus-visible {
+    outline: 2px solid theme('colors.brass.500');
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
 @layer components {
-  .section-padding {
-    @apply px-6 py-28 md:px-10 lg:px-16 xl:px-24;
+  .shell {
+    @apply mx-auto w-full max-w-shell px-5 sm:px-8;
   }
 
-  .fade-up {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  /* Mono eyebrow. Used for section labels, OS names and step markers — places
+     where the text is a tag rather than a sentence. */
+  .eyebrow {
+    @apply font-mono text-label uppercase text-slate-400;
   }
 
-  .fade-up.visible {
+  .rule {
+    @apply border-t border-chrome-200;
+  }
+
+  /* Primary action. The only filled-ink control on a light section. */
+  .btn-ink {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-5 py-3
+           font-sans text-[0.9375rem] font-medium text-white transition
+           duration-200 hover:bg-ink-700 active:scale-[0.98];
+  }
+
+  .btn-brass {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brass-500 px-5 py-3
+           font-sans text-[0.9375rem] font-medium text-white transition
+           duration-200 hover:bg-brass-600 active:scale-[0.98];
+  }
+
+  /* Long-form legal copy. These pages are read, not scanned, so they get a
+     narrow measure and generous leading rather than the marketing rhythm. */
+  .legal {
+    @apply max-w-prose text-[0.9375rem] leading-relaxed text-slate-500;
+  }
+
+  .legal h2 {
+    @apply mt-12 font-display text-[1.25rem] font-semibold tracking-tight text-ink;
+  }
+
+  .legal h2 + * {
+    @apply mt-3;
+  }
+
+  .legal p + p,
+  .legal p + ul,
+  .legal ul + p {
+    @apply mt-4;
+  }
+
+  .legal ul {
+    @apply list-disc space-y-1.5 pl-5;
+  }
+
+  .legal a {
+    @apply text-brass-600 underline underline-offset-4 transition hover:text-brass-700;
+  }
+
+  .legal strong {
+    @apply font-medium text-ink;
+  }
+
+  /* Form controls share one silhouette with the buttons: same radius family,
+     same border colour, brass only on focus. */
+  .field {
+    @apply w-full rounded-card border border-chrome-300 bg-white px-4 py-3 text-[0.9375rem]
+           text-ink transition placeholder:text-slate-300
+           hover:border-chrome-400 focus:border-brass-500 focus:outline-none
+           focus:ring-2 focus:ring-brass-500/20;
+  }
+
+  .field-label {
+    @apply mb-2 block font-mono text-label uppercase text-slate-400;
+  }
+
+  .btn-quiet {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-chrome-300
+           bg-white px-5 py-3 font-sans text-[0.9375rem] font-medium text-ink
+           transition duration-200 hover:border-chrome-400 hover:bg-paper active:scale-[0.98];
+  }
+}
+
+@layer utilities {
+  /* The hero's light: a wide, low-contrast wash that reads as daylight falling
+     across a desk. Rendered in CSS so the hero ships no image bytes at all. */
+  .field-light {
+    background:
+      radial-gradient(110% 70% at 50% 105%, #FFFFFF 0%, rgba(255, 255, 255, 0) 60%),
+      radial-gradient(65% 50% at 82% 4%, rgba(184, 134, 43, 0.17) 0%, rgba(184, 134, 43, 0) 72%),
+      radial-gradient(70% 55% at 10% 12%, rgba(96, 122, 172, 0.20) 0%, rgba(96, 122, 172, 0) 70%),
+      linear-gradient(180deg, #E6EAF2 0%, #EFF2F7 45%, #FBFCFD 100%);
+  }
+
+  /* Scrim over the hero photograph.
+     Weighted to the middle rather than the top: the sky is the best part of the
+     picture and lives in the top fifth, so darkening it hardest wasted it. The
+     mass now sits behind the headline and lede, where the contrast is actually
+     needed, and lifts again at both ends. */
+  .hero-scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(10, 12, 16, 0.28) 0%,
+      rgba(10, 12, 16, 0.44) 12%,
+      rgba(10, 12, 16, 0.60) 22%,
+      rgba(10, 12, 16, 0.73) 42%,
+      rgba(10, 12, 16, 0.74) 70%,
+      rgba(10, 12, 16, 0.60) 88%,
+      rgba(10, 12, 16, 0.48) 100%
+    );
+  }
+
+  /* Hairline grid, barely there — it gives the surface a sense of being a
+     measured plane rather than a flat fill. */
+  .field-grid {
+    background-image:
+      linear-gradient(to right, rgba(18, 20, 26, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(18, 20, 26, 0.045) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(75% 60% at 50% 40%, #000 0%, transparent 78%);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Scroll reveal. Kept to one gesture — a short rise — so the page has motion
+   without feeling like every element is auditioning. */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
+    transition: none;
   }
 
-  .glass {
-    @apply bg-white/70 backdrop-blur-xl border border-white/20;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }

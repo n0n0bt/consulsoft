@@ -1,148 +1,211 @@
 {
   "nav": {
     "services": "Services",
-    "about": "About",
+    "work": "Work",
     "process": "Process",
-    "projects": "Projects",
+    "team": "Team",
     "contact": "Contact",
-    "team": "Team"
+    "cta": "Book a call",
+    "menu": "Menu"
   },
   "hero": {
-    "tag": "SOFTWARE FOR ENTERPRISES",
-    "title": "Modern Software Development",
-    "subtitle": "We build tailored software solutions that drive your business forward.",
-    "cta": "Start a project",
-    "secondary": "Learn more"
+    "titleLine1": "You bring the vision.",
+    "titleLine2": "We build the",
+    "subtitle": "Custom web apps, desktop software for macOS and Windows, mobile apps and AI automations.",
+    "cta": "Start a brief",
+    "secondary": "Or look at the services first",
+    "proof1": "Straight to the founders",
+    "proof2": "Four platforms, one team",
+    "emailPlaceholder": "you{'@'}company.com",
+    "emailLabel": "Your email address",
+    "emailHint": "Four short questions about your project. Answered by one of the founders.",
+    "titleAccent": "technology."
   },
-  "partners": {
-    "title": "Our Clients & Partners"
+  "stack": {
+    "title": "What we build with"
   },
   "services": {
-    "tag": "OUR SERVICES",
-    "title": "Solutions for your success",
-    "subtitle": "We provide end-to-end software development – from consulting to delivery.",
+    "eyebrow": "Services",
+    "title": "Four surfaces, one team",
+    "subtitle": "Most applications need more than one place to run. We build all four — and help you decide which ones you actually need.",
     "items": {
       "web": {
-        "title": "Web Applications",
-        "description": "Modern, scalable web applications built with cutting-edge technologies and frameworks."
+        "title": "Web apps",
+        "description": "Portals, dashboards and customer areas that run in the browser and talk to the systems you already have."
+      },
+      "desktop": {
+        "title": "Desktop for macOS and Windows",
+        "description": "Software that runs locally: for workstations without reliable network, for large files, and for direct access to devices and the file system."
       },
       "mobile": {
-        "title": "Mobile Apps",
-        "description": "Native and cross-platform apps for iOS and Android with outstanding user experience."
-      },
-      "cloud": {
-        "title": "Cloud & DevOps",
-        "description": "Cloud-native architectures, CI/CD pipelines, and infrastructure automation."
-      },
-      "consulting": {
-        "title": "IT Consulting",
-        "description": "Strategic consulting for digital transformation and technology decisions."
-      },
-      "api": {
-        "title": "API & Integration",
-        "description": "Seamless system integration and API development for connected business processes."
+        "title": "Mobile apps",
+        "description": "iOS and Android. Native when performance decides it — cross-platform when that gets you there sooner."
       },
       "ai": {
-        "title": "AI & Automation",
-        "description": "Intelligent automation solutions and AI integration for more efficient operations."
+        "title": "AI automations",
+        "description": "Work someone does by hand today: reading documents, moving data between systems, triaging requests. With local models when the data cannot leave your building."
+      }
+    },
+    "surfaceLabel": "Choose a surface",
+    "more": "Learn more"
+  },
+  "compare": {
+    "eyebrow": "How we work",
+    "title": "Why software projects disappoint — and what we do differently",
+    "subtitle": "The usual reasons clients end up unhappy with a software project, and how we answer each one.",
+    "headLeft": "The usual",
+    "headRight": "With us",
+    "rows": {
+      "handoff": {
+        "problem": "You talk to sales; the code is written somewhere else",
+        "answer": "You talk to the two people writing the code"
+      },
+      "scope": {
+        "problem": "The scope grows and the invoice grows with it",
+        "answer": "Scope and price are fixed before we start"
+      },
+      "surface": {
+        "problem": "Desktop or mobile means bringing in a second supplier",
+        "answer": "Web, desktop and mobile from the same team"
+      },
+      "ai": {
+        "problem": "AI appears as a buzzword in the proposal",
+        "answer": "Automation of named tasks, with measurable time saved"
+      },
+      "lockin": {
+        "problem": "Nothing runs without the agency",
+        "answer": "Source code, repositories and access stay with you"
       }
     }
   },
-  "about": {
-    "tag": "WHY CONSULSOFT",
-    "title": "Your partner for digital innovation",
-    "description": "When it comes to modern software development, we are the right partner. We build solutions based on the latest technologies and methods.",
-    "stats": {
-      "experience": "Years of experience",
-      "projects": "Successful projects",
-      "experts": "Expert developers",
-      "satisfaction": "Client satisfaction"
-    },
-    "points": {
-      "quality": "Highest quality standards with agile methods",
-      "transparency": "Full transparency in every project step",
-      "partner": "Certified Microsoft & AWS Partner",
-      "iso": "ISO 9001 certified"
-    },
-    "circles": {
-      "agile": {
-        "label": "Agile\nMethods",
-        "description": "We work in short sprints with regular feedback. You can track progress at any time and adjust priorities as needed."
-      },
-      "cloud": {
-        "label": "Cloud\nNative",
-        "description": "Our solutions are designed cloud-first – scalable, resilient, and optimized for your infrastructure."
-      },
-      "ai": {
-        "label": "AI &\nAutomation",
-        "description": "We integrate modern AI models and automation into your business processes for maximum efficiency."
-      },
-      "security": {
-        "label": "Enterprise\nSecurity",
-        "description": "Security comes first. GDPR-compliant, ISO-certified, and developed to the highest standards."
-      }
-    }
-  },
-  "tech": {
-    "title": "Technologies we use for you",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "ai": "AI",
-    "cloud": "Cloud",
+  "work": {
+    "eyebrow": "Work",
+    "title": "Selected projects",
+    "subtitle": "We are a young company, and we would rather show one project properly than ten logos with nothing behind them.",
+    "view": "View project",
     "items": {
-      "angular": "Angular is a powerful framework for complex enterprise web applications with TypeScript, modular architecture, and a rich ecosystem.",
-      "vue": "Vue.js combines simplicity with flexibility – ideal for performant, reactive user interfaces and single-page applications.",
-      "react": "React enables component-based UIs with high reusability. Perfect for dynamic, data-driven web applications.",
-      "java": "Java is a robust, platform-independent language for stable and scalable enterprise applications with high security requirements.",
-      "csharp": "C# combined with .NET provides a powerful platform for enterprise software, APIs, and cloud applications.",
-      "kotlin": "Kotlin is modern, concise, and fully interoperable with Java – ideal for Android development and backend services.",
-      "python": "Python excels in versatility: from data science to automation, web backends, and AI applications.",
-      "node": "Node.js enables server-side JavaScript with high performance – perfect for real-time applications and microservices.",
-      "dotnet": ".NET Core is a cross-platform framework for high-performance APIs, cloud services, and enterprise applications.",
-      "php": "PHP is a widely-used scripting language for server-side web development – ideal for portals, CMS, and business websites.",
-      "spring": "Spring provides a comprehensive Java framework for enterprise applications with dependency injection and microservice architecture.",
-      "azure_openai": "Azure OpenAI brings GPT models into your enterprise infrastructure – secure, scalable, and GDPR-compliant.",
-      "ollama": "Ollama enables local execution of LLMs – full data control without cloud dependency.",
-      "azure": "Microsoft Azure offers comprehensive cloud services for computing, storage, AI, and DevOps.",
-      "aws": "Amazon Web Services is the leading cloud platform with over 200 services for every business size.",
-      "gcp": "Google Cloud Platform excels at big data, machine learning, and containerized infrastructure.",
-      "multicloud": "Multi-cloud strategies combine the strengths of different providers for maximum flexibility and resilience."
+      "immoreels": {
+        "title": "ImmoReels",
+        "summary": "A platform where estate agencies present properties as short videos — with search, map and an agent area."
+      }
+    },
+    "next": {
+      "eyebrow": "Your project",
+      "body": "The next slot here is open. Tell us what you want to build.",
+      "cta": "Discuss a project"
     }
   },
   "process": {
-    "tag": "OUR PROCESS",
-    "title": "How we work",
-    "subtitle": "A proven approach for successful software projects.",
+    "eyebrow": "Process",
+    "title": "How a project runs with us",
+    "subtitle": "Four steps we keep the same on every project, so you always know where things stand.",
     "steps": {
-      "discover": {
-        "title": "Analysis & Consulting",
-        "description": "We understand your requirements and develop the optimal strategy together."
+      "talk": {
+        "title": "Conversation",
+        "description": "We listen, ask questions, and tell you honestly whether we are the right people for the job."
       },
-      "design": {
-        "title": "Concept & Design",
-        "description": "We design the architecture and user interface with a focus on usability."
+      "scope": {
+        "title": "Scope & quote",
+        "description": "We write down what gets built, what it costs and when it is done — before the first line exists."
       },
-      "develop": {
+      "build": {
         "title": "Development",
-        "description": "Agile implementation with regular sprints, reviews, and transparent communication."
+        "description": "Short sprints with working builds. You see progress, not just a status report."
       },
-      "deliver": {
-        "title": "Launch & Support",
-        "description": "Go-live support, monitoring, and long-term maintenance of your software solution."
+      "handover": {
+        "title": "Handover & operation",
+        "description": "Launch, documentation and access, all in your hands. Maintenance afterwards if you want it, not because you are stuck with us."
       }
     }
   },
-  "testimonial": {
-    "quote": "Modern software development also means: Creating full transparency for clients and developing the best solution together.",
-    "author": "Management",
-    "role": "Consulsoft GmbH"
+  "faq": {
+    "title": "Questions we hear the most",
+    "items": {
+      "cost": {
+        "q": "What does a project cost?",
+        "a": "It depends on scope — but you get the number before we start, not after. Following the first call you receive a quote with a fixed scope and a fixed price."
+      },
+      "time": {
+        "q": "How long until it is live?",
+        "a": "Smaller applications and automations in weeks, larger platforms in months. We only commit to a date once we know the scope."
+      },
+      "code": {
+        "q": "Do I own the source code?",
+        "a": "Yes. The repository, access and documentation are yours — including after the engagement ends."
+      },
+      "existing": {
+        "q": "Can you take over existing software?",
+        "a": "Often, yes. We review what exists and tell you whether extending or rebuilding is the cheaper path."
+      },
+      "data": {
+        "q": "Where does my data run?",
+        "a": "Wherever you want it to. For AI features we can run local models, so no data leaves your building."
+      },
+      "remote": {
+        "q": "Do you work outside Bavaria?",
+        "a": "Yes. We work remotely across Germany, and we will find a way to meet in person when it matters."
+      }
+    }
   },
   "cta": {
-    "tag": "READY TO START?",
-    "title": "Let's discuss your next project",
-    "subtitle": "Contact us for a free initial consultation. We look forward to hearing from you.",
-    "button": "Get in touch",
-    "email": "info{'@'}consulsoft.de"
+    "explore": {
+      "title": "Not sure what you need?",
+      "body": "In 30 minutes we work out together which tasks are worth automating and what a sensible first step would be.",
+      "button": "Book a strategy call"
+    },
+    "ready": {
+      "title": "Already know what you want?",
+      "body": "Send us the scope and the timeline. The assessment comes from one of the founders, not from a sales desk.",
+      "button": "Book a call"
+    }
+  },
+  "footer": {
+    "blurb": "Custom software for web, desktop and mobile — plus the automations that take work off your desk.",
+    "company": "Company",
+    "legal": "Legal",
+    "reach": "Contact",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "made": "Built in Naila, Bavaria"
+  },
+  "seo": {
+    "home": {
+      "title": "Custom software for web, desktop, mobile and AI",
+      "description": "Consulsoft builds web apps, desktop software for macOS and Windows, mobile apps and AI automations. Two founders who write the code themselves. From Naila, Bavaria."
+    }
+  },
+  "contactPage": {
+    "tag": "CONTACT",
+    "title": "Get in touch",
+    "subtitle": "Tell us about your project. We'll get back to you within 24 hours.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you{'@'}company.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "phone": "Phone",
+      "phonePlaceholder": "+49 ...",
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or inquiry...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "error": "Something went wrong. Please try again or email us directly at info{'@'}consulsoft.de."
+    },
+    "success": {
+      "title": "Message sent!",
+      "message": "Thank you for reaching out. We'll get back to you as soon as possible.",
+      "another": "Send another message"
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "address": "Germany",
+      "responseTitle": "Quick response",
+      "responseText": "We typically respond to inquiries within 24 hours."
+    }
   },
   "teamPage": {
     "tag": "OUR TEAM",
@@ -182,6 +245,14 @@
       }
     }
   },
+  "thankYouPage": {
+    "tag": "THANK YOU",
+    "title": "Your message has been sent!",
+    "message": "Thank you for reaching out. Our team will get back to you as soon as possible.",
+    "responseInfo": "You can expect a response from us within 24 hours.",
+    "backHome": "Back to homepage",
+    "sendAnother": "Send another message"
+  },
   "projects": {
     "tag": "OUR PROJECTS",
     "title": "Selected work",
@@ -216,53 +287,517 @@
       }
     }
   },
-  "thankYouPage": {
-    "tag": "THANK YOU",
-    "title": "Your message has been sent!",
-    "message": "Thank you for reaching out. Our team will get back to you as soon as possible.",
-    "responseInfo": "You can expect a response from us within 24 hours.",
-    "backHome": "Back to homepage",
-    "sendAnother": "Send another message"
-  },
-  "contactPage": {
-    "tag": "CONTACT",
-    "title": "Get in touch",
-    "subtitle": "Tell us about your project. We'll get back to you within 24 hours.",
-    "form": {
+  "brief": {
+    "title": "Project brief",
+    "stepOf": "Step {current} of {total}",
+    "close": "Cancel brief",
+    "back": "Back",
+    "cancel": "Cancel",
+    "next": "Continue",
+    "submit": "Send brief",
+    "sending": "Sending…",
+    "error": "The brief could not be sent. Please try again, or write to info{'@'}consulsoft.de.",
+    "steps": {
+      "project": {
+        "eyebrow": "Project",
+        "question": "What should we build for you?",
+        "hint": "Pick as many as apply — if you are unsure, choose the closest fit."
+      },
+      "task": {
+        "eyebrow": "The work",
+        "question": "What is it about, specifically?",
+        "hint": "A few sentences is plenty. The more concrete the task, the more useful our answer."
+      },
+      "scope": {
+        "eyebrow": "Scope",
+        "question": "When should it run, and on what budget?",
+        "hint": "Both help us judge whether and how we can do the project properly."
+      },
+      "contact": {
+        "eyebrow": "Contact",
+        "question": "How do we reach you?",
+        "hint": "The reply comes from Naumche or Dimitar, not from a sales desk."
+      },
+      "pain": {
+        "eyebrow": "Starting point",
+        "question": "Where are you losing time today?",
+        "hint": "Pick as many as apply. We are looking for the task where a fix pays back soonest."
+      },
+      "timing": {
+        "eyebrow": "Timeline",
+        "question": "How urgent is this?",
+        "hint": "A rough sense is enough — we will get specific on the call."
+      },
+      "details": {
+        "eyebrow": "Details",
+        "question": "A few details on what you picked",
+        "hint": "One short question each — the points that move effort and price the most."
+      }
+    },
+    "surfaces": {
+      "web": {
+        "title": "Web app",
+        "hint": "Portal, dashboard or customer area in the browser"
+      },
+      "desktop": {
+        "title": "Desktop software",
+        "hint": "For macOS, Windows or both"
+      },
+      "mobile": {
+        "title": "Mobile app",
+        "hint": "iOS, Android or both"
+      },
+      "ai": {
+        "title": "AI automation",
+        "hint": "Work that is done by hand today"
+      }
+    },
+    "fields": {
+      "description": "Description",
+      "descriptionPlaceholder": "For example: orders arrive by email as PDFs and get typed into our ERP by hand…",
+      "timeline": "Timeline",
+      "budget": "Budget range",
       "name": "Name",
-      "namePlaceholder": "Your full name",
       "email": "Email",
-      "emailPlaceholder": "you{'@'}company.com",
       "company": "Company",
-      "companyPlaceholder": "Your company",
       "phone": "Phone",
-      "phonePlaceholder": "+49 ...",
-      "message": "Message",
-      "messagePlaceholder": "Describe your project or inquiry...",
-      "submit": "Send message",
-      "sending": "Sending...",
-      "error": "Something went wrong. Please try again or email us directly at info{'@'}consulsoft.de."
+      "descriptionExplore": "For example: two colleagues copy orders out of email into our inventory system every morning…"
     },
-    "success": {
-      "title": "Message sent!",
-      "message": "Thank you for reaching out. We'll get back to you as soon as possible.",
-      "another": "Send another message"
+    "timelines": {
+      "asap": "As soon as possible",
+      "quarter": "In 1–3 months",
+      "halfyear": "In 3–6 months",
+      "open": "Not fixed yet"
     },
-    "info": {
-      "email": "Email",
-      "location": "Location",
-      "address": "Germany",
-      "responseTitle": "Quick response",
-      "responseText": "We typically respond to inquiries within 24 hours."
+    "budgets": {
+      "s": "Under €10,000",
+      "m": "€10,000 – 25,000",
+      "l": "€25,000 – 50,000",
+      "xl": "Over €50,000",
+      "unknown": "Not sure yet"
+    },
+    "summary": {
+      "surfaces": "Project",
+      "timeline": "Timeline",
+      "budget": "Budget range",
+      "pains": "Starting point",
+      "entry": "Entry point"
+    },
+    "regarding": "Enquiry about",
+    "pains": {
+      "duplicate": {
+        "title": "Data is maintained by hand in several places",
+        "hint": "The same information ends up in two or three systems."
+      },
+      "documents": {
+        "title": "Documents are entered by hand",
+        "hint": "Invoices, delivery notes or orders get retyped."
+      },
+      "overview": {
+        "title": "There is no clear overview",
+        "hint": "Figures sit in different places and somebody assembles them regularly."
+      },
+      "fit": {
+        "title": "The software does not fit the process",
+        "hint": "Your process is built around the tool instead of the other way round."
+      },
+      "unsure": {
+        "title": "Something else",
+        "hint": "Describe it in your own words on the next step."
+      }
+    },
+    "details": {
+      "web": {
+        "label": "Web app: which systems need connecting?",
+        "options": {
+          "erp": "ERP / inventory",
+          "crm": "CRM / accounting",
+          "none": "None — it stands alone",
+          "unsure": "Not sure yet"
+        }
+      },
+      "desktop": {
+        "label": "Desktop software: for which system?",
+        "options": {
+          "windows": "Windows",
+          "macos": "macOS",
+          "both": "Both"
+        }
+      },
+      "mobile": {
+        "label": "Mobile app: for which platform?",
+        "options": {
+          "ios": "iOS",
+          "android": "Android",
+          "both": "Both"
+        }
+      },
+      "ai": {
+        "label": "AI automation: may the data leave the building?",
+        "options": {
+          "cloud": "Yes, cloud is fine",
+          "local": "No, must stay in-house",
+          "unsure": "Not sure yet"
+        }
+      }
     }
   },
-  "footer": {
-    "description": "Consulsoft builds tailored software solutions for businesses. Quality, transparency, and innovation are at our core.",
-    "links": "Links",
-    "legal": "Legal",
-    "privacy": "Privacy Policy",
-    "imprint": "Imprint",
-    "terms": "Terms",
-    "rights": "All rights reserved."
+  "founders": {
+    "eyebrow": "Team",
+    "title": "The two people you will be talking to",
+    "subtitle": "No sales desk, no layer in between. We write the code ourselves, and you reach us directly.",
+    "role": "Founder & developer",
+    "cta": "More about us",
+    "members": {
+      "naumche": {
+        "focus": "Frontend, architecture and project lead."
+      },
+      "dimitar": {
+        "focus": "Backend, DevOps and databases."
+      }
+    }
+  },
+  "servicePages": {
+    "cta": "Start a brief",
+    "stackTitle": "Technologies",
+    "faqTitle": "Common questions",
+    "otherTitle": "Other services",
+    "web": {
+      "tag": "Web apps",
+      "h1": "Custom web application development",
+      "seoTitle": "Custom web app development for business",
+      "seoDescription": "Custom web applications for business: customer portals, dashboards and line-of-business tools that run in the browser and talk to the systems you already have.",
+      "lede": "Portals, dashboards and line-of-business tools that run in the browser — connected to the systems you already use.",
+      "intro": {
+        "title": "When a web app is the right answer",
+        "body1": "A web app is not a website. A website informs; a web app does work. It signs people in, knows roles and permissions, processes what they enter and writes results back into your systems. As soon as several people work on the same data and each is allowed to see a different slice of it, you are in web app territory.",
+        "body2": "The advantage over desktop and mobile: nothing has to be installed. You open a link and everyone works on the same state — colleagues inside the company as well as customers or suppliers outside it. If your application has to run without a network or reach local hardware, a desktop application is the better choice."
+      },
+      "useCasesTitle": "What companies have us build",
+      "useCases": {
+        "uc1": {
+          "title": "Customer and partner portals",
+          "body": "Your customers check orders, documents and status themselves instead of calling. That takes noticeable load off your office phones."
+        },
+        "uc2": {
+          "title": "Dashboards and reporting",
+          "body": "Figures from several systems in one place, current to the day — instead of a spreadsheet someone assembles by hand at month end."
+        },
+        "uc3": {
+          "title": "Order and procurement systems",
+          "body": "Entry, approvals and handover in one flow, with a traceable status for every case."
+        },
+        "uc4": {
+          "title": "Tools built around your process",
+          "body": "For when off-the-shelf software covers eighty percent of your process and the remaining twenty are the expensive part."
+        }
+      },
+      "approachTitle": "How we build web apps",
+      "approach": {
+        "ap1": {
+          "title": "Connect to what exists",
+          "body": "Your ERP, inventory and accounting stay where they are. We integrate through interfaces rather than making you maintain data twice."
+        },
+        "ap2": {
+          "title": "Roles from the start",
+          "body": "Who may see what, who may change what. We settle this before the first line, because retrofitting it later is expensive."
+        },
+        "ap3": {
+          "title": "Operated by you",
+          "body": "Hosting in Germany or inside your own infrastructure. The repository and all access stay with you."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "What does a web app cost?",
+          "a": "It depends on scope. A contained portal costs considerably less than a line-of-business tool with many roles and interfaces. After the first call you get a quote with a fixed scope and a fixed price, before we start."
+        },
+        "q2": {
+          "q": "Can you connect our existing ERP?",
+          "a": "Usually yes. If the system has an interface, we use it. If not, we look at database or file routes. We tell you what is possible after looking at the system — not once the project is underway."
+        },
+        "q3": {
+          "q": "How long does development take?",
+          "a": "Smaller applications in weeks, larger platforms in months. You see working builds early rather than waiting months for a finished result."
+        },
+        "q4": {
+          "q": "Where does the data run?",
+          "a": "Wherever you want: with a German host, in your own server environment, or in your existing cloud. We follow your requirements on data protection and operations."
+        }
+      },
+      "production": {
+        "title": "Builder, prototype — or software that has to hold",
+        "body1": "Today's app builders and AI generators put something presentable in front of you in an afternoon. That is genuinely useful: if you want to think an idea through internally, those tools are faster than any proposal we could write. We prototype that way ourselves.",
+        "body2": "The difference shows up later. When fifty people work at once, when permissions have to actually hold rather than just hide menu items, when the data model grows after two years without breaking what already exists — the prototype stops carrying. What matters then is unglamorous, and it is exactly our work.",
+        "points": {
+          "p1": {
+            "title": "Permissions on the server",
+            "body": "Enforced where they cannot be bypassed, not hidden in the frontend."
+          },
+          "p2": {
+            "title": "Migrations without data loss",
+            "body": "The data model grows. Changes must not damage records already in it."
+          },
+          "p3": {
+            "title": "Code you can hand over",
+            "body": "Readable, tested, documented — including for a team that is not us."
+          }
+        }
+      }
+    },
+    "desktop": {
+      "tag": "Desktop",
+      "h1": "Desktop software for macOS and Windows",
+      "seoTitle": "Custom desktop software development for Windows and macOS",
+      "seoDescription": "Custom desktop applications for Windows and macOS: for workstations without reliable network, large data volumes and direct access to devices and the file system.",
+      "lede": "Software that runs locally — for workstations without a reliable network, for large files, and for direct access to devices and the file system.",
+      "intro": {
+        "title": "Why some software belongs on the machine",
+        "body1": "Browsers can do a great deal now, but not everything. They may not reach arbitrary folders unprompted, they speak only limited dialects to attached hardware, and when the network drops in a workshop the work stops. For those cases we build software that installs on the machine and keeps running without a connection.",
+        "body2": "This is not a step backwards. A modern desktop application synchronises as soon as the network returns, updates itself, and shares logic and data model with your web or mobile application when you need more than one surface."
+      },
+      "useCasesTitle": "Where desktop software makes sense",
+      "useCases": {
+        "uc1": {
+          "title": "Workstations without a stable network",
+          "body": "Workshop, warehouse, building site. The application keeps working and reconciles once the connection is back."
+        },
+        "uc2": {
+          "title": "Large files and local processing",
+          "body": "CAD data, image stacks, measurement series. Processing on the machine beats any upload."
+        },
+        "uc3": {
+          "title": "Devices and interfaces",
+          "body": "Scales, scanners, label printers, machine controls. Direct access without going through a browser."
+        },
+        "uc4": {
+          "title": "Work with the file system",
+          "body": "Watch folder structures, rename files in bulk, file exports away automatically."
+        }
+      },
+      "approachTitle": "How we build desktop software",
+      "approach": {
+        "ap1": {
+          "title": "One codebase, both systems",
+          "body": "Windows and macOS from the same source. That halves not just development but the maintenance that follows."
+        },
+        "ap2": {
+          "title": "Installation and updates",
+          "body": "Signed installers and automatic updates, so your IT team is not walking round the building for every release."
+        },
+        "ap3": {
+          "title": "Offline by design",
+          "body": "Local storage with reconciliation, rather than an application that shows an error message the moment the connection drops."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Why desktop rather than just a web app?",
+          "a": "If your application has to run without a network, reach local hardware or process large files, desktop is the honest answer. For anything else we will recommend a web app ourselves — it is cheaper to operate."
+        },
+        "q2": {
+          "q": "Does it run on both Windows and macOS?",
+          "a": "Yes. We develop from a shared codebase for both systems, so features and appearance match and changes only have to be made once."
+        },
+        "q3": {
+          "q": "How do updates reach the machines?",
+          "a": "Through a built-in update function. The application checks for a new version itself and installs it — after approval by your IT team if you prefer."
+        },
+        "q4": {
+          "q": "Can it work without internet?",
+          "a": "Yes, where your work requires it. Data is held locally and reconciled once a connection returns. How conflicts are resolved is something we decide together."
+        }
+      },
+      "production": {
+        "title": "The spreadsheet that grew, and where it stops",
+        "body1": "Almost every company has one: the workbook full of macros that has run for years and that exactly one person understands. It was the right answer when it was written — somebody solved a problem instead of waiting for someone else to. That deserves respect, not a lecture.",
+        "body2": "It gets serious when the business depends on it and nobody can intervene: no access control, no history, no backup that understands the file, and a single point of failure attached to one person. That is the point where moving to real software pays for itself.",
+        "points": {
+          "p1": {
+            "title": "Multi-user operation",
+            "body": "People working at once, without locked files or \"copy (3)\"."
+          },
+          "p2": {
+            "title": "An audit trail",
+            "body": "Who changed what, and when — provable, years later."
+          },
+          "p3": {
+            "title": "No key-person risk",
+            "body": "Documented code instead of knowledge that walks out with one person."
+          }
+        }
+      }
+    },
+    "mobile": {
+      "tag": "Mobile apps",
+      "h1": "Mobile app development for iOS and Android",
+      "seoTitle": "Mobile app development for iOS and Android",
+      "seoDescription": "Mobile apps for business: field service, warehouse, time tracking and customer apps for iOS and Android. Native or cross-platform, depending on what the job needs.",
+      "lede": "iOS and Android. Native when performance decides it — cross-platform when that gets you there sooner.",
+      "intro": {
+        "title": "When an app is worth building",
+        "body1": "An app earns its place when people work standing up. In field service, in the warehouse, on a building site, at a customer. There a phone is the one device already in hand — and camera, location, barcode scanning and offline operation are exactly what the work needs.",
+        "body2": "Not every idea needs an app. If your users sit at a desk, a web app is almost always cheaper and available sooner. We tell you which way we lean in the first conversation, even when that argues against the bigger project."
+      },
+      "useCasesTitle": "What companies use apps for",
+      "useCases": {
+        "uc1": {
+          "title": "Field service",
+          "body": "Capture jobs, checklists and reports on site, instead of typing up paper in the evening."
+        },
+        "uc2": {
+          "title": "Warehouse and picking",
+          "body": "Scan barcodes with the phone camera and post stock immediately, without separate handheld scanners."
+        },
+        "uc3": {
+          "title": "Time and activity tracking",
+          "body": "Record hours and tasks where they happen — with location where it has to be evidenced."
+        },
+        "uc4": {
+          "title": "Customer apps",
+          "body": "Orders, status and documents for your customers, when a browser portal is not enough."
+        }
+      },
+      "approachTitle": "How we build apps",
+      "approach": {
+        "ap1": {
+          "title": "Native or cross-platform",
+          "body": "We decide on your requirement, not on preference. For most business applications a shared codebase across both platforms is enough."
+        },
+        "ap2": {
+          "title": "Offline from the start",
+          "body": "Warehouses and building sites have dead spots. The app stores locally and syncs later — otherwise it is useless in the field."
+        },
+        "ap3": {
+          "title": "Store release",
+          "body": "We handle submission and approval with Apple and Google, or distribute internally through your device management."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Native or cross-platform — which is better?",
+          "a": "For business applications a shared codebase is usually the better call: same features, half the cost, one thing to maintain. Native becomes interesting when you lean heavily on camera, graphics or background processing."
+        },
+        "q2": {
+          "q": "Who publishes the app to the App Store?",
+          "a": "We do — ideally under your own developer account, so the app belongs to you and you stay independent of us."
+        },
+        "q3": {
+          "q": "Does the app work without internet?",
+          "a": "Yes, where your work requires it. Data is held on the device and reconciled at the next connection. We plan for that from the start rather than bolting it on."
+        },
+        "q4": {
+          "q": "Do we actually need an app?",
+          "a": "Often not. If your users mostly work at a computer, we will recommend a web app. We say so in the first conversation, even when it is the smaller project."
+        }
+      },
+      "production": {
+        "title": "App builders: fine for a test, thin in production",
+        "body1": "An app builder puts something on a phone within days. For an internal test, or to show a board an idea, that is a perfectly sensible route — and cheaper than commissioning us for it.",
+        "body2": "It rarely reaches production. What matters there is the unglamorous part: the app has to keep working in a dead spot and reconcile cleanly afterwards. It has to clear Apple and Google review. It has to still run against a new iOS version in two years, and for that somebody needs the source.",
+        "points": {
+          "p1": {
+            "title": "Offline and reconciliation",
+            "body": "Local data and defined rules for when two devices change the same record."
+          },
+          "p2": {
+            "title": "Store approval",
+            "body": "Apple and Google policy is the most common reason an app never ships."
+          },
+          "p3": {
+            "title": "Your developer account",
+            "body": "The app belongs to you, not to a platform that can change its pricing."
+          }
+        }
+      }
+    },
+    "ai": {
+      "tag": "AI automation",
+      "h1": "AI automation for business",
+      "seoTitle": "AI automation for business – automate manual processes",
+      "seoDescription": "AI automation for mid-sized companies: read documents, move data between systems, triage incoming requests. With local models where data cannot leave the building.",
+      "lede": "Work someone does by hand today: reading documents, moving data, triaging requests. With models that never leave your building, where that matters.",
+      "intro": {
+        "title": "Automation of a named task, not a project",
+        "body1": "Most AI initiatives fail not on the technology but because nobody can name which work is supposed to disappear. So we start at the other end: you show us a task a person repeats by hand today, and we work out how many hours are in it.",
+        "body2": "Only then do we build. Usually that is not a large system but a small, unremarkable automation that sits at one point in your process and saves hours there every day. If it does not pay for itself we tell you — that is what the assessment is for."
+      },
+      "useCasesTitle": "What can realistically be automated",
+      "useCases": {
+        "uc1": {
+          "title": "Reading documents",
+          "body": "Invoices, delivery notes and orders arrive as PDFs or scans and land in your system as structured data instead of being retyped."
+        },
+        "uc2": {
+          "title": "Moving data between systems",
+          "body": "When the same information is entered by hand in three places today, that is the cheapest automation available."
+        },
+        "uc3": {
+          "title": "Triaging requests",
+          "body": "Sort incoming email by topic, urgency and ownership, and put a draft reply up for approval."
+        },
+        "uc4": {
+          "title": "Producing text and reports",
+          "body": "Recurring summaries, minutes and status reports from data you already hold, for a person to check."
+        }
+      },
+      "approachTitle": "How we deliver automation",
+      "approach": {
+        "ap1": {
+          "title": "Measure the task first",
+          "body": "We look at the process and estimate the hours per month inside it. That number decides whether we start at all."
+        },
+        "ap2": {
+          "title": "A person keeps the approval",
+          "body": "Automation prepares; it does not decide alone. Where correctness matters, your staff stay in the loop with an approval step."
+        },
+        "ap3": {
+          "title": "Models in-house when needed",
+          "body": "Where your data cannot leave the company, we run models on your own hardware."
+        }
+      },
+      "faq": {
+        "q1": {
+          "q": "Does our data leave the company?",
+          "a": "Only if you want it to. We can run models locally on your own hardware so no content goes to external providers. It takes more setup, but for sensitive documents it is often the only sensible option."
+        },
+        "q2": {
+          "q": "Which tasks are actually suitable?",
+          "a": "Anything frequent, rule-bound and time-consuming today: capturing documents, moving data, sorting, summarising. One-off cases full of exceptions rarely pay off."
+        },
+        "q3": {
+          "q": "How do you measure whether it paid off?",
+          "a": "Before we start we record how long the task takes by hand and how often it occurs. After launch we compare that with actual effort. Without that number, any claim about benefit is guesswork."
+        },
+        "q4": {
+          "q": "Do we need large amounts of data?",
+          "a": "For most applications, no. Modern models already understand language and documents; we add your domain knowledge and rules. Custom training data is only needed in special cases."
+        }
+      },
+      "production": {
+        "title": "ChatGPT in a browser tab is not automation yet",
+        "body1": "Plenty of staff already help themselves: open the document, copy the content, paste it into an AI tool, copy the answer back. That is resourceful and it does save time. We would not talk anyone out of it while it is one case a week.",
+        "body2": "At two hundred documents a month the arithmetic flips. The copying is the work, not the thinking — and it happens outside your systems, with no record, with company data in somebody else's browser tab. Automation means the task runs without a person in the middle, and the person only approves.",
+        "points": {
+          "p1": {
+            "title": "Connected, not copied",
+            "body": "Straight from the mailbox, folder and target system — no trip through the clipboard."
+          },
+          "p2": {
+            "title": "Traceable",
+            "body": "Every case logged: what arrived, what was extracted, who approved it."
+          },
+          "p3": {
+            "title": "Data protection settled",
+            "body": "Local models on request, so no documents go to outside providers."
+          }
+        }
+      }
+    },
+    "productionEyebrow": "Build it yourself?"
+  },
+  "dock": {
+    "cta": "Book a call",
+    "email": "Send an email"
   }
 }
