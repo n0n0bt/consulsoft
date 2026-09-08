@@ -81,7 +81,7 @@ function startBrief() {
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
               </button>
             </div>
-            <p class="px-4 pb-2 pt-1.5 text-center text-[0.8125rem] text-slate-400">
+            <p class="px-4 pb-2 pt-1.5 text-center text-[0.8125rem] text-slate-500">
               {{ t('hero.emailHint') }}
             </p>
           </form>

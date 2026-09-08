@@ -9,9 +9,9 @@
     "menu": "Menu"
   },
   "hero": {
-    "titleLine1": "You bring the vision.",
-    "titleLine2": "We build the",
-    "subtitle": "Custom web apps, desktop software for macOS and Windows, mobile apps and AI automations.",
+    "titleLine1": "Still running on Excel and email?",
+    "titleLine2": "We build",
+    "subtitle": "Custom web, desktop and mobile applications plus AI automations for mid-sized companies. Fixed price before we start, source code stays with you.",
     "cta": "Start a brief",
     "secondary": "Or look at the services first",
     "proof1": "Straight to the founders",
@@ -19,7 +19,7 @@
     "emailPlaceholder": "you{'@'}company.com",
     "emailLabel": "Your email address",
     "emailHint": "Four short questions about your project. Answered by one of the founders.",
-    "titleAccent": "technology."
+    "titleAccent": "software you own."
   },
   "stack": {
     "title": "What we build with"
@@ -81,19 +81,28 @@
   "work": {
     "eyebrow": "Work",
     "title": "Selected projects",
-    "subtitle": "We are a young company, and we would rather show one project properly than ten logos with nothing behind them.",
+    "subtitle": "Three projects running today – each linked to the real application, not just a logo.",
     "view": "View project",
     "items": {
       "immoreels": {
         "title": "ImmoReels",
         "summary": "A platform where estate agencies present properties as short videos — with search, map and an agent area."
+      },
+      "fitbody": {
+        "title": "365 FIT BODY",
+        "summary": "A workout tracker as an installable app for iOS, Android and web – works offline, with a subscription model and exercise library."
+      },
+      "infobalkan": {
+        "title": "infobalkan",
+        "summary": "Directory of businesses from the Balkan community in Germany – with map search, verified listings and an editorial section."
       }
     },
     "next": {
       "eyebrow": "Your project",
       "body": "The next slot here is open. Tell us what you want to build.",
       "cta": "Discuss a project"
-    }
+    },
+    "ownProduct": "Own product"
   },
   "process": {
     "eyebrow": "Process",
@@ -173,6 +182,12 @@
     "home": {
       "title": "Custom software for web, desktop, mobile and AI",
       "description": "Consulsoft builds web apps, desktop software for macOS and Windows, mobile apps and AI automations. Two founders who write the code themselves. From Naila, Bavaria."
+    },
+    "team": {
+      "description": "Naumche Joshevski and Dimitar Manev: two founders who build web, desktop and mobile software themselves. Direct contact, no middle layer. Consulsoft from Naila, Bavaria."
+    },
+    "contact": {
+      "description": "Contact Consulsoft: describe your software project and we reply within 24 hours with an honest assessment. By form, email or phone."
     }
   },
   "contactPage": {
@@ -284,6 +299,26 @@
         "challenge": "Build a platform that serves both as a public-facing website for customer acquisition and as an internal management system for members, contracts, and payments — with 24/7 availability.",
         "solution": "Unified Nuxt application with role-based access control: public website, member area, and admin dashboard in a single codebase. Integrated payment processing and automated contract management.",
         "results": "24/7 roadside assistance with <30 min response time | Digital member management | Admin dashboard with real-time statistics | Europe-wide coverage"
+      },
+      "fitbody": {
+        "title": "365 FIT BODY",
+        "short": "Workout tracker and training journal as an installable app for iOS, Android and web – works offline, cancel monthly.",
+        "overviewTitle": "A tracker that logs a session in seconds",
+        "description1": "365 FIT BODY is a deliberately minimal training tracker: users build their exercise library, turn it into fixed or random workout templates, and log every session with sets, reps and weight. Streak logic keeps the history visible and motivates users to keep going for 365 days.",
+        "description2": "The app runs as a Progressive Web App on the home screen of iOS and Android, works offline and syncs as soon as the connection is back. On top of that: login, subscription handling on a monthly plan, and a landing page in German and English that leads users straight into registration.",
+        "challenge": "Build a training tracker that can be operated on a phone in the gym within seconds – without app store lock-in, without ads, and with a payment model that runs itself without support overhead.",
+        "solution": "Mobile-first web app with offline storage and background sync, installable as a PWA. Exercise library, templates and sessions as clearly separated data models, plus subscription handling and a bilingual marketing site.",
+        "results": "Runs as an app on iOS, Android and in the browser | Log offline, sync later | Subscription with monthly cancellation | Landing page in German and English"
+      },
+      "infobalkan": {
+        "title": "infobalkan",
+        "short": "Our own directory of businesses from the Balkan community in Germany – with map search, verified listings and editorial content.",
+        "overviewTitle": "A product we run ourselves",
+        "description1": "infobalkan is the first online platform for people from the Balkans living in Germany: a curated directory of businesses and service providers, sorted by category, city and status, with a map view and direct contact by phone or WhatsApp. An editorial section delivers news, guides and association information in the language of the community.",
+        "description2": "We built infobalkan as our own product and operate it ourselves – hosting, verification of listings, content and further development. A second edition for the Macedonian community is prepared at infomkd.de. For clients this means: we know the operator side not only from requirements, but from our own daily work.",
+        "challenge": "A directory that users understand immediately and that grows for the operator without effort: listings must be verifiable, search must combine category, city and opening hours, and content must be maintainable in several languages.",
+        "solution": "Server-side rendered web app with Leaflet-based map search, filters by category, city and verification status, detail pages per business and an editorial section for news and guides – GDPR-compliant with consent management.",
+        "results": "Over 30 verified businesses in 19 categories | Map search with filters by city and status | Editorial section with news and guides | Built and operated by us"
       }
     }
   },

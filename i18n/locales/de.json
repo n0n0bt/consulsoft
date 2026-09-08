@@ -9,9 +9,9 @@
     "menu": "Menü"
   },
   "hero": {
-    "titleLine1": "Sie haben die Vision.",
-    "titleLine2": "Wir bauen die",
-    "subtitle": "Individuelle Web-Apps, Desktop-Programme für macOS und Windows, mobile Apps und KI-Automationen.",
+    "titleLine1": "Noch alles in Excel und E-Mail?",
+    "titleLine2": "Wir bauen",
+    "subtitle": "Individuelle Web-, Desktop- und Mobile-Anwendungen sowie KI-Automationen für den Mittelstand. Fester Preis vor dem Start, Quellcode bei Ihnen.",
     "cta": "Anfrage starten",
     "secondary": "Oder erst die Leistungen ansehen",
     "proof1": "Direkt mit den Gründern",
@@ -19,7 +19,7 @@
     "emailPlaceholder": "ihre{'@'}firma.de",
     "emailLabel": "Ihre E-Mail-Adresse",
     "emailHint": "Vier kurze Fragen zu Ihrem Vorhaben. Antwort von einem der Gründer.",
-    "titleAccent": "Technologie."
+    "titleAccent": "Software, die Ihnen gehört."
   },
   "stack": {
     "title": "Womit wir arbeiten"
@@ -81,19 +81,28 @@
   "work": {
     "eyebrow": "Arbeiten",
     "title": "Ausgewählte Projekte",
-    "subtitle": "Wir sind ein junges Unternehmen und zeigen lieber ein Projekt im Detail als zehn Logos ohne Inhalt.",
+    "subtitle": "Drei Projekte, die heute laufen – jedes mit Link zur echten Anwendung, nicht nur mit Logo.",
     "view": "Projekt ansehen",
     "items": {
       "immoreels": {
         "title": "ImmoReels",
         "summary": "Eine Plattform, auf der Maklerbüros Immobilien als kurze Videos zeigen – mit Suche, Karte und Maklerbereich."
+      },
+      "fitbody": {
+        "title": "365 FIT BODY",
+        "summary": "Ein Workout-Tracker als installierbare App für iOS, Android und Web – offline nutzbar, mit Abo-Modell und Übungsbibliothek."
+      },
+      "infobalkan": {
+        "title": "infobalkan",
+        "summary": "Verzeichnis für Unternehmen der Balkan-Community in Deutschland – mit Kartensuche, verifizierten Einträgen und Redaktionsbereich."
       }
     },
     "next": {
       "eyebrow": "Ihr Projekt",
       "body": "Der nächste Platz hier ist frei. Erzählen Sie uns, was Sie bauen wollen.",
       "cta": "Projekt besprechen"
-    }
+    },
+    "ownProduct": "Eigenes Produkt"
   },
   "process": {
     "eyebrow": "Prozess",
@@ -173,6 +182,12 @@
     "home": {
       "title": "Individuelle Software für Web, Desktop, Mobil und KI",
       "description": "Consulsoft entwickelt Web-Apps, Desktop-Programme für macOS und Windows, mobile Apps und KI-Automationen. Zwei Gründer, die selbst entwickeln. Aus Naila, Bayern."
+    },
+    "team": {
+      "description": "Naumche Joshevski und Dimitar Manev: zwei Gründer, die Web-, Desktop- und Mobile-Software selbst entwickeln. Direkter Kontakt, keine Zwischenebene. Aus Naila, Bayern."
+    },
+    "contact": {
+      "description": "Kontakt zu Consulsoft: Beschreiben Sie Ihr Softwareprojekt, wir antworten innerhalb von 24 Stunden mit einer ehrlichen Einschätzung."
     }
   },
   "contactPage": {
@@ -284,6 +299,26 @@
         "challenge": "Eine Plattform entwickeln, die sowohl als öffentliche Website zur Kundengewinnung als auch als internes Verwaltungssystem für Mitglieder, Verträge und Zahlungen funktioniert – mit 24/7 Erreichbarkeit.",
         "solution": "Einheitliche Nuxt-Anwendung mit rollenbasierter Zugriffskontrolle: öffentliche Website, Mitgliederbereich und Admin-Dashboard in einer Codebasis. Integrierte Zahlungsabwicklung und automatisierte Vertragsverwaltung.",
         "results": "24/7 Pannenhilfe mit <30 Min Reaktionszeit | Digitale Mitgliederverwaltung | Admin-Dashboard mit Echtzeit-Statistiken | Europaweite Abdeckung"
+      },
+      "fitbody": {
+        "title": "365 FIT BODY",
+        "short": "Workout-Tracker und Trainingstagebuch als installierbare App für iOS, Android und Web – offline nutzbar, monatlich kündbar.",
+        "overviewTitle": "Ein Tracker, der in Sekunden protokolliert",
+        "description1": "365 FIT BODY ist ein bewusst minimalistischer Trainingstracker: Nutzer legen ihre Übungsbibliothek an, bauen daraus feste oder zufällige Trainingsvorlagen und protokollieren jede Session mit Sätzen, Wiederholungen und Gewicht. Die Streak-Logik hält den Verlauf sichtbar und motiviert, an 365 Tagen dranzubleiben.",
+        "description2": "Die App läuft als Progressive Web App auf dem Startbildschirm von iOS und Android, funktioniert offline und synchronisiert, sobald wieder Netz da ist. Dazu kommen Login, Abo-Abwicklung über ein monatliches Modell und eine Landingpage in Deutsch und Englisch, die den Nutzer direkt in die Registrierung führt.",
+        "challenge": "Einen Trainingstracker bauen, der auf dem Handy im Fitnessstudio in Sekunden bedienbar ist – ohne App-Store-Zwang, ohne Werbung und mit einem Bezahlmodell, das sich ohne Support-Aufwand selbst verwaltet.",
+        "solution": "Mobile-first Web-App mit Offline-Speicher und Hintergrund-Synchronisierung, installierbar als PWA. Übungsbibliothek, Vorlagen und Sessions als klar getrennte Datenmodelle, dazu Abo-Abwicklung und ein zweisprachiger Marketingauftritt.",
+        "results": "Läuft als App auf iOS, Android und im Browser | Offline protokollieren, später synchronisieren | Abo-Modell mit monatlicher Kündigung | Landingpage in Deutsch und Englisch"
+      },
+      "infobalkan": {
+        "title": "infobalkan",
+        "short": "Unser eigenes Verzeichnis für Unternehmen der Balkan-Community in Deutschland – mit Kartensuche, verifizierten Einträgen und Redaktion.",
+        "overviewTitle": "Ein Produkt, das wir selbst betreiben",
+        "description1": "infobalkan ist die erste Online-Plattform für Menschen vom Balkan in Deutschland: ein kuratiertes Verzeichnis von Unternehmen und Dienstleistern, sortiert nach Kategorie, Stadt und Status, mit Kartenansicht und Direktkontakt per Anruf oder WhatsApp. Ein Redaktionsbereich liefert Nachrichten, Leitfäden und Vereinsinfos in der Sprache der Community.",
+        "description2": "Wir haben infobalkan als eigenes Produkt entwickelt und betreiben es selbst – Hosting, Verifizierung der Einträge, Inhalte und Weiterentwicklung. Ein zweiter Ableger für die mazedonische Community ist unter infomkd.de vorbereitet. Für Kunden bedeutet das: Wir kennen die Seite eines Betreibers nicht nur aus Anforderungen, sondern aus dem eigenen Alltag.",
+        "challenge": "Ein Verzeichnis, das für Nutzer sofort verständlich ist und für Betreiber ohne Aufwand wächst: Einträge müssen verifizierbar sein, die Suche muss Kategorie, Stadt und Öffnungszeiten kombinieren, und Inhalte müssen mehrsprachig gepflegt werden können.",
+        "solution": "Serverseitig gerenderte Web-App mit Kartensuche auf Basis von Leaflet, Filtern nach Kategorie, Stadt und Verifizierungsstatus, Detailseiten pro Unternehmen und einem redaktionellen Bereich für Nachrichten und Leitfäden – DSGVO-konform mit Consent-Management.",
+        "results": "Über 30 verifizierte Unternehmen in 19 Kategorien | Kartensuche mit Filter nach Stadt und Status | Redaktionsbereich mit Nachrichten und Leitfäden | Von uns entwickelt und betrieben"
       }
     }
   },

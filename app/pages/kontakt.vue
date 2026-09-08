@@ -7,9 +7,9 @@ useScrollReveal()
 
 useHead({ title: () => t('contactPage.title') })
 useSeoMeta({
-  description: () => t('contactPage.subtitle'),
+  description: () => t('seo.contact.description'),
   ogTitle: () => t('contactPage.title'),
-  ogDescription: () => t('contactPage.subtitle'),
+  ogDescription: () => t('seo.contact.description'),
 })
 
 const form = reactive({ name: '', email: '', company: '', phone: '', message: '' })

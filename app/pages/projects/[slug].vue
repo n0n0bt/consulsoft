@@ -11,21 +11,53 @@ const projectData: Record<string, {
   tech: string[]
   surfaces: string[]
   hero: string
+  heroSize: [number, number]
   url: string
-  screenshots: { src: string, alt: string }[]
+  own?: boolean
+  screenshots: { src: string, width: number, height: number, alt: string }[]
 }> = {
   immoreels: {
     tech: ['go', 'postgresql', 'vue', 'typescript'],
     surfaces: ['Web', 'Mobil'],
     hero: '/project-immoreels/Xnapper-2026-03-31-13.21.16.webp',
+    heroSize: [1600, 938],
     url: 'https://immoreels24.de',
     screenshots: [
-      { src: '/project-immoreels/Xnapper-2026-03-31-13.22.21.webp', alt: 'Video-Reels Karussell – Dark Mode' },
-      { src: '/project-immoreels/Xnapper-2026-03-31-13.23.13.webp', alt: 'Immobilien-Reel Detailansicht' },
-      { src: '/project-immoreels/Xnapper-2026-03-31-13.22.45.webp', alt: 'Login – Dark Mode' },
-      { src: '/project-immoreels/Xnapper-2026-03-31-13.23.40.webp', alt: 'Startseite – Light Mode' },
-      { src: '/project-immoreels/Xnapper-2026-03-31-13.24.08.webp', alt: 'Video-Reels Karussell – Light Mode' },
-      { src: '/project-immoreels/Xnapper-2026-03-31-13.24.20.webp', alt: 'Login – Light Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.22.21.webp', width: 1600, height: 940, alt: 'Video-Reels Karussell – Dark Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.23.13.webp', width: 1600, height: 940, alt: 'Immobilien-Reel Detailansicht' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.22.45.webp', width: 1600, height: 939, alt: 'Login – Dark Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.23.40.webp', width: 1600, height: 938, alt: 'Startseite – Light Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.24.08.webp', width: 1600, height: 937, alt: 'Video-Reels Karussell – Light Mode' },
+      { src: '/project-immoreels/Xnapper-2026-03-31-13.24.20.webp', width: 1600, height: 936, alt: 'Login – Light Mode' },
+    ],
+  },
+  fitbody: {
+    tech: ['go', 'postgresql', 'vue', 'typescript'],
+    surfaces: ['Web', 'Mobil'],
+    hero: '/project-365fitbody/landing-hero.webp',
+    heroSize: [1600, 1000],
+    url: 'https://365fitbody.com',
+    screenshots: [
+      { src: '/project-365fitbody/workflow.webp', width: 1600, height: 944, alt: 'Drei Schritte: Bibliothek anlegen, Vorlagen gestalten, täglich trainieren' },
+      { src: '/project-365fitbody/features.webp', width: 1600, height: 1000, alt: 'Funktionsübersicht der App' },
+      { src: '/project-365fitbody/pricing.webp', width: 1600, height: 944, alt: 'Monatsabo mit Preis und Leistungen' },
+      { src: '/project-365fitbody/mobile-hero.webp', width: 780, height: 1688, alt: 'Startseite auf dem Smartphone' },
+      { src: '/project-365fitbody/mobile-workflow.webp', width: 780, height: 1688, alt: 'Trainingsablauf auf dem Smartphone' },
+    ],
+  },
+  infobalkan: {
+    tech: ['go', 'postgresql', 'vue', 'typescript'],
+    surfaces: ['Web'],
+    hero: '/project-infobalkan/home-map.webp',
+    heroSize: [1600, 1000],
+    url: 'https://infobalkan.de',
+    own: true,
+    screenshots: [
+      { src: '/project-infobalkan/directory.webp', width: 1600, height: 1000, alt: 'Verzeichnis mit Kategorien, Städten und Verifizierungsfilter' },
+      { src: '/project-infobalkan/business-detail.webp', width: 1600, height: 1000, alt: 'Detailseite eines Unternehmens mit Kontakt' },
+      { src: '/project-infobalkan/news.webp', width: 1600, height: 1000, alt: 'Redaktionsbereich mit Nachrichten' },
+      { src: '/project-infobalkan/mobile-home.webp', width: 780, height: 1688, alt: 'Startseite mit Kartensuche auf dem Smartphone' },
+      { src: '/project-infobalkan/mobile-directory.webp', width: 780, height: 1688, alt: 'Verzeichnis auf dem Smartphone' },
     ],
   },
 }
@@ -40,7 +72,8 @@ useSeoMeta({
   description: () => t(`projects.items.${slug}.short`),
   ogTitle: () => t(`projects.items.${slug}.title`),
   ogDescription: () => t(`projects.items.${slug}.short`),
-  ogImage: project.hero,
+  ogImage: `https://consulsoft.de${project.hero}`,
+  twitterImage: `https://consulsoft.de${project.hero}`,
 })
 
 const facts = ['challenge', 'solution', 'results'] as const
@@ -64,6 +97,10 @@ const facts = ['challenge', 'solution', 'results'] as const
               :key="s"
               class="rounded-full bg-white/70 px-2.5 py-1 font-mono text-[0.625rem] uppercase tracking-[0.1em] text-brass-600"
             >{{ s }}</span>
+            <span
+              v-if="project.own"
+              class="rounded-full border border-chrome-300 px-2.5 py-1 font-mono text-[0.625rem] uppercase tracking-[0.1em] text-slate-500"
+            >{{ t('work.ownProduct') }}</span>
           </div>
 
           <h1 class="mt-4 max-w-3xl text-display-lg font-semibold text-balance text-ink">
@@ -84,7 +121,7 @@ const facts = ['challenge', 'solution', 'results'] as const
     <!-- Hero shot -->
     <section class="shell pt-12 sm:pt-16">
       <div class="reveal overflow-hidden rounded-panel border border-chrome-200 bg-white">
-        <img :src="project.hero" alt="" class="w-full" fetchpriority="high" decoding="async" />
+        <img :src="project.hero" alt="" :width="project.heroSize[0]" :height="project.heroSize[1]" class="w-full" fetchpriority="high" decoding="async" />
       </div>
     </section>
 
@@ -130,7 +167,7 @@ const facts = ['challenge', 'solution', 'results'] as const
           :class="i === 0 && 'sm:col-span-2'"
           :style="{ transitionDelay: `${i * 50}ms` }"
         >
-          <img :src="shot.src" :alt="shot.alt" loading="lazy" decoding="async" class="w-full" />
+          <img :src="shot.src" :alt="shot.alt" :width="shot.width" :height="shot.height" loading="lazy" decoding="async" class="w-full" />
         </figure>
       </div>
     </section>

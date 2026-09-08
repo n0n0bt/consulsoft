@@ -5,9 +5,9 @@ useScrollReveal()
 
 useHead({ title: () => t('teamPage.title') })
 useSeoMeta({
-  description: () => t('teamPage.subtitle'),
+  description: () => t('seo.team.description'),
   ogTitle: () => t('teamPage.title'),
-  ogDescription: () => t('teamPage.subtitle'),
+  ogDescription: () => t('seo.team.description'),
 })
 
 const team = [

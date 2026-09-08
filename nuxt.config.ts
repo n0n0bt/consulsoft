@@ -16,11 +16,11 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'de', name: 'Deutsch', file: 'de.json' },
-      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
     ],
     defaultLocale: 'de',
-    lazy: true,
+    baseUrl: 'https://consulsoft.de',
     langDir: '../i18n/locales',
     strategy: 'prefix_except_default',
   },
@@ -63,6 +63,8 @@ export default defineNuxtConfig({
     '/partners/**': { headers: { 'cache-control': IMAGE_CACHE } },
     '/project-immoreels/**': { headers: { 'cache-control': IMAGE_CACHE } },
     '/project-pannenhilfe/**': { headers: { 'cache-control': IMAGE_CACHE } },
+    '/project-365fitbody/**': { headers: { 'cache-control': IMAGE_CACHE } },
+    '/project-infobalkan/**': { headers: { 'cache-control': IMAGE_CACHE } },
     '/team/**': { headers: { 'cache-control': IMAGE_CACHE } },
   },
 
@@ -75,7 +77,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: 'de' },
       title: 'Consulsoft – Moderne Softwareentwicklung für Unternehmen',
       titleTemplate: '%s | Consulsoft',
       meta: [
@@ -87,18 +88,11 @@ export default defineNuxtConfig({
         // Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Consulsoft' },
-        { property: 'og:title', content: 'Consulsoft – Moderne Softwareentwicklung für Unternehmen' },
-        { property: 'og:description', content: 'Maßgeschneiderte Softwarelösungen: Web-Apps, Mobile Apps, Cloud & DevOps, KI-Integration. Ihr Partner für digitale Innovation in Deutschland.' },
-        { property: 'og:image', content: 'https://consulsoft.de/og-image.png' },
-        { property: 'og:url', content: 'https://consulsoft.de' },
-        { property: 'og:locale', content: 'de_DE' },
-        { property: 'og:locale:alternate', content: 'en_US' },
+        { property: 'og:image', content: 'https://consulsoft.de/og-image.jpg' },
 
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Consulsoft – Moderne Softwareentwicklung' },
-        { name: 'twitter:description', content: 'Maßgeschneiderte Softwarelösungen für Unternehmen. Web-Apps, Cloud, KI & mehr.' },
-        { name: 'twitter:image', content: 'https://consulsoft.de/og-image.png' },
+        { name: 'twitter:image', content: 'https://consulsoft.de/og-image.jpg' },
 
         // Additional SEO
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
@@ -107,7 +101,6 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-        { rel: 'canonical', href: 'https://consulsoft.de' },
       ],
     },
   },

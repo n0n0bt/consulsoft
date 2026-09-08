@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
 
@@ -78,7 +78,6 @@ useSeoMeta({
 })
 
 useHead(() => ({
-  link: [{ rel: 'canonical', href: url.value }],
   script: [
     {
       type: 'application/ld+json',
@@ -125,7 +124,6 @@ useHead(() => ({
       }),
     },
   ],
-  htmlAttrs: { lang: locale.value },
 }))
 </script>
 

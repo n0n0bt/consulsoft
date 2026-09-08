@@ -8,6 +8,22 @@ const projects = [
     image: '/project-immoreels/Xnapper-2026-03-31-13.21.16.webp',
     surfaces: ['Web', 'Mobil'],
     stack: ['go', 'postgresql', 'vue', 'typescript'],
+    own: false,
+  },
+  {
+    key: 'fitbody',
+    image: '/project-365fitbody/landing-hero.webp',
+    surfaces: ['Web', 'Mobil'],
+    stack: ['go', 'postgresql', 'vue', 'typescript'],
+    own: false,
+  },
+  // Built and operated by us: labelled as such so the grid stays honest.
+  {
+    key: 'infobalkan',
+    image: '/project-infobalkan/home-map.webp',
+    surfaces: ['Web'],
+    stack: ['go', 'postgresql', 'vue', 'typescript'],
+    own: true,
   },
 ]
 </script>
@@ -48,6 +64,10 @@ const projects = [
               :key="s"
               class="rounded-full bg-brass-50 px-2.5 py-1 font-mono text-[0.625rem] uppercase tracking-[0.1em] text-brass-600"
             >{{ s }}</span>
+            <span
+              v-if="p.own"
+              class="rounded-full border border-chrome-300 px-2.5 py-1 font-mono text-[0.625rem] uppercase tracking-[0.1em] text-slate-500"
+            >{{ t('work.ownProduct') }}</span>
           </div>
 
           <h3 class="mt-4 text-display-sm font-semibold text-ink">{{ t(`work.items.${p.key}.title`) }}</h3>
