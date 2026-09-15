@@ -104,6 +104,39 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
         { name: 'theme-color', content: '#1C1C22' },
       ],
+      // Meta Pixel. The <noscript> fallback goes at the start of <body> rather
+      // than in <head>: a <head> may only contain link/style/meta, and an <img>
+      // there makes the parser close <head> early and relocate what follows.
+      script: [
+        // Consent + analytics, first-party on stat.consulsoft.de. Listed first so
+        // it is parsed before the pixel below and can gate it if configured to.
+        {
+          src: 'https://stat.consulsoft.de/t.js?cid=df8ea72c-adcb-4d02-8136-d75a1e546be9',
+          async: true,
+          tagPosition: 'head',
+        },
+        {
+          tagPosition: 'head',
+          innerHTML: `!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1444307864182977');
+fbq('track', 'PageView');`,
+        },
+      ],
+
+      noscript: [
+        {
+          tagPosition: 'bodyOpen',
+          innerHTML: '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1444307864182977&ev=PageView&noscript=1" />',
+        },
+      ],
+
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
